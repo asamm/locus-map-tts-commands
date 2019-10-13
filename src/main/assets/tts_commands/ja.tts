@@ -1,0 +1,177 @@
+{
+	"version": 8,
+	"language": "ja",
+	"actions_A": {
+		"__comment_navigation": "all possible navigation commands",
+		"action_dist": "%D2先、%A。",
+		"arrive_at_dest": "目的地付近です",
+		"arrive_at_dest_dist": "%D2先、目的地付近です。",
+		"straight": "直進です",
+		"right_bear": "右方向です",
+		"right": "右折です",
+		"right_sharp": "大きく右折です",
+		"left_bear": "左方向です",
+		"left": "左折です",
+		"left_sharp": "大きく左折です",
+		"stay_right": "右側です",
+		"stay_left": "左側です",
+		"take_exit_right": "右方向、出口です",
+		"take_exit_left": "左方向、出口です",
+		"take_ramp_straight": "ランプを直進します",
+		"take_ramp_right": "ランプを右方向に進みます",
+		"take_ramp_left": "ランプを左方向に進みます",
+		"merge": "合流します",
+		"merge_right": "右側、合流します",
+		"merge_right_on": "右側、%Sに合流します",
+		"merge_left": "左側、合流します",
+		"merge_left_on": "左側、%Sに合流します",
+		"then": "さらに",
+		"turn_u-turn": "Uターンです",
+		"turn_u-turn_dist": "%D2先、Uターンです。",
+		"recalculating": "ルートを検索しています",
+		"roundabout_dist": "%D2先、ラウンドアバウトです。",
+		"roundabout_dist_exit": "%D2先、ラウンドアバウト、%N2の出口です。",
+		"roundabout_exit": "%N2の出口です",
+		"pass_point": "%S付近です",
+		"pass_point_dist": "%D2先、%S付近です。",
+		"navigation_start_car": "ナビゲーションを開始します",
+		"navigation_start_bicycle": "ナビゲーションを開始します",
+		"navigation_start_foot": "ナビゲーションを開始します",
+		"navigation_too_far_from_track": "%N1時の方向へ%D2で、ルートに戻ります",
+		"tts_set": "テキスト読み上げを使用します",
+		"track_recalculated": "ルートを検索しました",
+
+		"__comment_poi_alert": "POI Alert parameters",
+		"poi_alert_point_X": "%N1時の方向%D2に、%S",
+		"poi_alert_X_points": "範囲内に%N1ポイントあります",
+
+		"__comment_values": "values that are usually used in training manager",
+		"value_altitude_current": "標高%D1",
+		"value_cadence_interval": "ラップケイデンス%N1",
+		"value_cadence_track": "平均ケイデンス%N1",
+		"value_distance_interval": "ラップ距離%D1",
+		"value_distance_track": "距離%D1",
+		"value_device_battery": "バッテリー残量%N1パーセント",
+		"value_elevation_downhill_interval": "ラップ標高差、下り%D1",
+		"value_elevation_downhill_track": "標高差、下り%D1",
+		"value_elevation_uphill_interval": "ラップ標高差、上り%D1",
+		"value_elevation_uphill_track": "標高差、上り%D1",
+		"value_energy_track": "消費エネルギー%E1",
+		"value_heart_rate_current": "心拍数%N1",
+		"value_heart_rate_avg_interval": "ラップ心拍数%N1",
+		"value_pace_interval": "ラップペース%P1",
+		"value_pace_track": "ペース%P1",
+		"value_speed_avg_interval": "ラップ平均速度%V1",
+		"value_speed_avg_track": "平均速度%V1",
+		"value_time_current": "時刻%T2",
+		"value_time_interval": "ラップタイム%T1",
+		"value_time_track": "累計タイム%T1",
+
+		"__comment_special": "special unique parameters",
+		"special_comma": "、",
+		"special_period": "。"
+	},
+	"distances_D1": {
+		"__comment": "Parameter 'D1' is always used for simple static information like 'Distance is: xxx metres'",
+		"m": [
+			"%N1m, 1, Inf",
+			"%NDecm, 0, Inf"
+		],
+		"km": [
+			"%N1km, 1, Inf",
+			"%NDeckm, 0, Inf"
+		],
+		"yd": [
+			"%N1ヤード, 1, Inf",
+			"%NDecヤード, 0, Inf"
+		],
+		"ft": [
+			"%N1フィート, 1, Inf",
+			"%NDecフィート, 0, Inf"
+		],
+		"mi": [
+			"%N1マイル, 1, Inf",
+			"%NDecマイル, 0, Inf"
+		]
+	},
+	"distances_D2": {
+		"__comment": "Parameter 'D2' is optional and may be used in 'Actions' above. It is useful in cases, where D1 and D2 are not equal. Like in 'After xxx metres, turn left'",
+		"parent": "D1"
+	},
+	"energy_E1": {
+		"kj": [
+			"%N1キロジュール, 0, Inf"
+		],
+		"kcal": [
+			"%N1キロカロリー, 0, Inf"
+		]
+	},
+	"paces_P1": {
+		"__comment": "Parameter 'P1' is always used for simple static information like 'Pace is: xxx min per km'",
+		"minperkm": [
+			"%T1パーキロ, 0, Inf"
+		],
+		"minpermile": [
+			"%T1パーマイル, 0, Inf"
+		],
+		"minpernmile": [
+			"%T1パー海里, 0, Inf"
+		]
+	},
+	"speeds_V1": {
+		"__comment": "Parameter 'V1' is always used for simple static information like 'Speed is: xxx kph'",
+		"kmh": [
+			"時速%N1キロ, 1, Inf",
+			"時速%NDecキロ, 0, Inf"
+		],
+		"milh": [
+			"時速%N1マイル, 1, Inf",
+			"時速%NDecマイル, 0, Inf"
+		],
+		"nmih": [
+			"時速%N1海里, 1, Inf",
+			"時速%NDec海里, 0, Inf"
+		],
+		"knot": [
+			"%N1ノット, 1, Inf",
+			"%NDecノット, 0, Inf"
+		]
+	},
+	"times_T1": {
+		"__comment": "Parameter 'T1' is always used for simple static information like 'Time is: xxx sec'",
+		"hours": [
+			"%N1時間, 0, Inf"
+		],
+		"minutes": [
+			"%N1分, 0, Inf"
+		],
+		"seconds": [
+			"%N1秒, 0, Inf"
+		]
+	},
+	"times_T2": {
+		"__comment": "Parameter 'T2' is optional and may be used in 'Actions' above. It is useful in cases, where T1 and T2 are not equal.",
+		"hours": [
+			"%N1時, 0, Inf"
+		],
+		"minutes": [
+			"%N1分, 0, Inf"
+		],
+		"seconds": [
+			"%N1秒, 0, Inf"
+		]
+	},
+	"numbers_N1": {
+	},
+	"numbers_N2": {
+		"1": "1番目",
+		"2": "2番目",
+		"3": "3番目",
+		"4": "4番目",
+		"5": "5番目",
+		"6": "6番目",
+		"7": "7番目",
+		"8": "8番目",
+		"9": "9番目"
+	}
+}

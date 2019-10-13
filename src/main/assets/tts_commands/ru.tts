@@ -1,0 +1,223 @@
+{
+	"version": 8,
+	"language": "ru",
+	"actions_A": {
+		"__comment_navigation": "все возможные команды навигации",
+		"action_dist": "через %D2 %A",
+		"arrive_at_dest": "вы прибыли в место назначения",
+		"arrive_at_dest_dist": "через %D2, вы прибудете в место назначения",
+		"straight": "продолжайте движение прямо",
+		"right_bear": "возьмите правее",
+		"right": "поверните направо",
+		"right_sharp": "резкий поворот направо",
+		"left_bear": "возьмите левее",
+		"left": "поверните налево",
+		"left_sharp": "резкий поворот налево",
+		"stay_right": "оставайтесь справа",
+		"stay_left": "оставайтесь слева",
+		"take_exit_right": "выезд направо",
+		"take_exit_left": "выезд налево",
+		"take_ramp_straight": "съезд прямо",
+		"take_ramp_right": "съезд направо",
+		"take_ramp_left": "съезд налево",
+		"merge": "слияние",
+		"merge_right": "слияние справа",
+		"merge_right_on": "слияние справа с дорогой %S",
+		"merge_left": "слияние слева",
+		"merge_left_on": "слияние слева с дорогой %S",
+		"then": ", затем",
+		"turn_u-turn": "развернитесь",
+		"turn_u-turn_dist": "через %D2 развернитесь",
+		"recalculating": "пересчет маршрута",
+		"roundabout_dist": "через %D2, круговое движение",
+		"roundabout_dist_exit": "на круге через %D2, %N2 выезд",
+		"roundabout_exit": "%N2 выезд",
+		"pass_point": "%S",
+		"pass_point_dist": "%S через %D2",
+		"navigation_start_car": "Поехали",
+		"navigation_start_bicycle": "Покатили",
+		"navigation_start_foot": "Пошли",
+		"navigation_too_far_from_track": "Трек расположен %D2 на %N1 часов",
+		"tts_set": "Текст в речь установлен правильно",
+		"track_recalculated": "Трек перепроложен",
+
+		"__comment_poi_alert": "Параметры предупреждений о точках интересов",
+		"poi_alert_point_X": "Точка %S расположена %D2 на %N1 часов",
+		"poi_alert_X_points": "%N1 точек в диапазоне",
+
+		"__comment_values": "values that are usually used in training manager",
+		"value_altitude_current": "высота %D1",
+		"value_cadence_interval": "каденс отрезка %N1",
+		"value_cadence_track": "каденс %N1",
+		"value_distance_interval": "дистанция отрезка %D1",
+		"value_distance_track": "дистанция %D1",
+		"value_device_battery": "батарея %N1 процентов",
+		"value_elevation_downhill_interval": "сброс высоты на отрезке %D1",
+		"value_elevation_downhill_track": "сброс высоты %D1",
+		"value_elevation_uphill_interval": "набор высоты на отрезке %D1",
+		"value_elevation_uphill_track": "набор высоты %D1",
+		"value_energy_track": "энергия %E1",
+		"value_heart_rate_current": "пульс %N1 ударов",
+		"value_heart_rate_avg_interval": "пульс на отрезке %N1 ударов",
+		"value_pace_interval": "темп на отрезке %P1",
+		"value_pace_track": "темп %P1",
+		"value_speed_avg_interval": "средняя скорость отрезка %V1",
+		"value_speed_avg_track": "средняя скорость %V1",
+		"value_time_current": "текущее время %T1",
+		"value_time_interval": "время отрезка %T1",
+		"value_time_track": "время %T1",
+
+		"__comment_special": "special unique parameters",
+		"special_comma": ", ",
+		"special_period": ". "
+	},
+	"distances_D1": {
+	    "__comment": "Parameter 'D1' is always used for simple static information like 'Distance is: xxx metres'",
+		"m": [
+			"%N1 метр, 1, 1",
+			"%N1 метра, 2, 4",
+			"%N1 метров, 5, Inf",
+			"%NDec метров, 0, Inf"
+		],
+		"km": [
+			"%N1 километр, 1, 1",
+			"%N1 километра, 2, 4",
+			"%N1 километров, 5, Inf",
+			"%NDec километров, 0, Inf"
+		],
+		"yd": [
+			"%N1 ярд, 1, 1",
+			"%N1 ярда, 2, Inf",
+			"%NDec ярдов, 0, Inf"
+		],
+		"ft": [
+			"%N1 фут, 1, 1",
+			"%N1 фута, 2, Inf",
+			"%NDec футов, 0, Inf"
+		],
+		"mi": [
+			"%N1 миля, 1, 1",
+			"%N1 мили, 2, Inf",
+			"%NDec миль, 0, Inf"
+		]
+	},
+	"distances_D2": {
+	    "__comment": "Parameter 'D2' is optional and may be used in 'Actions' above. It is useful in cases, where D1 and D2 are not equal. Like in 'After xxx metres, turn left'",
+	    "parent": "D1"
+	},
+	"energy_E1": {
+		"kj": [
+			"%N1 килоджоулей, 0, Inf"
+		],
+		"kcal": [
+			"%N1 килокалорий, 0, Inf"
+		]
+	},
+	"paces_P1": {
+		"__comment": "Parameter 'P1' is always used for simple static information like 'Pace is: xxx min per km'",
+		"minperkm": [
+			"%T1 на километр, 0, Inf"
+		],
+		"minpermile": [
+			"%T1 на милю, 0, Inf"
+		],
+		"minpernmile": [
+			"%T1 на морскую милю, 0, Inf"
+		]
+	},
+	"speeds_V1": {
+	    "__comment": "Parameter 'V1' is always used for simple static information like 'Speed is: xxx kph'",
+        "kmh": [
+            "%N1 километр в час, 1, 1",
+            "%N1 километра в час, 2, Inf",
+            "%NDec километров в час, 0, Inf"
+        ],
+        "milh": [
+            "%N1 миля в час, 1, 1",
+            "%N1 мили в час, 2, Inf",
+            "%NDec миль в час, 0, Inf"
+        ],
+        "nmih": [
+            "%N1 морская миля в час, 1, 1",
+            "%N1 морские мили в час, 2, Inf",
+            "%NDec морских миль в час, 0, Inf"
+        ],
+        "knot": [
+            "%N1 узел, 1, 1",
+            "%N1 узла, 2, Inf",
+            "%NDec узлов, 0, Inf"
+        ]
+	},
+    "times_T1": {
+        "__comment": "Parameter 'T1' is always used for simple static information like 'Time is: xxx sec'",
+        "hours": [
+            "%N1 часов, 0, 0",
+            "%N1 час, 1, 1",
+            "%N1 часа, 2, Inf"
+        ],
+        "minutes": [
+            "%N1 минут, 0, 0",
+            "%N1 минута, 1, 1",
+            "%N1 минуты, 2, Inf"
+        ],
+        "seconds": [
+            "%N1 секунд, 0, 0",
+            "%N1 секунда, 1, 1",
+            "%N1 секунды, 2, Inf"
+        ]
+    },
+    "times_T2": {
+	    "__comment": "Parameter 'T2' is optional and may be used in 'Actions' above. It is useful in cases, where T1 and T2 are not equal.",
+	    "parent": "T1"
+	},
+	"numbers_N1": {
+		"1": "один",
+		"2": "два",
+		"3": "три",
+		"4": "четыре",
+		"5": "пять",
+		"6": "шесть",
+		"7": "семь",
+		"8": "восемь",
+		"9": "девять",
+		"10": "десять",
+		"11": "одинадцать",
+		"12": "двенадцат",
+		"13": "тринадцать",
+		"14": "четырнадцать",
+		"15": "пятнадцать",
+		"16": "шестнадцать",
+		"17": "семнадцать",
+		"18": "восемнадцать",
+		"19": "девятнадцать",
+		"20": "двадцать",
+		"30": "тридцать",
+		"40": "сорок",
+		"50": "пятьдесят",
+		"60": "шестьдесят",
+		"70": "семьдесят",
+		"80": "восемьдесят",
+		"90": "девяносто",
+		"100": "сто",
+		"200": "двести",
+		"300": "триста",
+		"400": "четыреста",
+		"500": "пятьсот",
+		"600": "шестьсот",
+		"700": "семьсот",
+		"800": "восемьсот",
+		"900": "девятьсот",
+		"1000": "тысяча"
+	},
+	"numbers_N2": {
+		"1": "первый",
+		"2": "второй",
+		"3": "третий",
+		"4": "четвертый",
+		"5": "пятый",
+		"6": "шестой",
+		"7": "седьмой",
+		"8": "восьмой",
+		"9": "девятый"
+	}
+}

@@ -1,0 +1,221 @@
+{
+	"version": 8,
+	"language": "en",
+	"actions_A": {
+		"__comment_navigation": "all possible navigation commands",
+		"action_dist": "after %D2 %A",
+		"arrive_at_dest": "you've arrived at your destination",
+		"arrive_at_dest_dist": "after %D2, you'll be at your destination",
+		"straight": "continue straight",
+		"right_bear": "bear right",
+		"right": "turn right",
+		"right_sharp": "sharp right",
+		"left_bear": "bear left",
+		"left": "turn left",
+		"left_sharp": "sharp left",
+		"stay_right": "stay right",
+		"stay_left": "stay left",
+		"take_exit_right": "take exit right",
+		"take_exit_left": "take exit left",
+		"take_ramp_straight": "take ramp straight",
+		"take_ramp_right": "take ramp right",
+		"take_ramp_left": "take ramp left",
+		"merge": "merge",
+		"merge_right": "merge right",
+		"merge_right_on": "merge right on road %S",
+		"merge_left": "merge left",
+		"merge_left_on": "merge left on road %S",
+		"then": ", then",
+		"turn_u-turn": "turn around",
+		"turn_u-turn_dist": "after %D2 turn around",
+		"recalculating": "wait, recalculating",
+		"roundabout_dist": "after %D2, roundabout",
+		"roundabout_dist_exit": "on roundabout after %D2, take %N2 exit",
+		"roundabout_exit": "%N2 exit",
+		"pass_point": "%S",
+		"pass_point_dist": "%S after %D2",
+		"navigation_start_car": "Let's go",
+		"navigation_start_bicycle": "Let's go",
+		"navigation_start_foot": "Let's go",
+		"navigation_too_far_from_track": "Track lies %D2 on %N1 o'clock",
+		"tts_set": "Text-to-speech correctly set",
+		"track_recalculated": "Track was recalculated",
+
+		"__comment_poi_alert": "POI Alert parameters",
+		"poi_alert_point_X": "Point %S lies %D2 on %N1 o'clock",
+		"poi_alert_X_points": "%N1 points in range",
+
+		"__comment_values": "values that are usually used in training manager",
+		"value_altitude_current": "altitude %D1",
+		"value_cadence_interval": "lap cadence %N1",
+		"value_cadence_track": "cadence %N1",
+		"value_distance_interval": "lap distance %D1",
+		"value_distance_track": "distance %D1",
+		"value_device_battery": "battery %N1 percent",
+		"value_elevation_downhill_interval": "lap elevation loss %D1",
+		"value_elevation_downhill_track": "elevation loss %D1",
+		"value_elevation_uphill_interval": "lap elevation gain %D1",
+		"value_elevation_uphill_track": "elevation gain %D1",
+		"value_energy_track": "energy %E1",
+		"value_heart_rate_current": "heart rate %N1 BPM",
+		"value_heart_rate_avg_interval": "lap heart rate %N1 BPM",
+		"value_pace_interval": "lap pace %P1",
+		"value_pace_track": "pace %P1",
+		"value_speed_avg_interval": "lap average speed %V1",
+		"value_speed_avg_track": "average speed %V1",
+		"value_time_current": "current time %T1",
+		"value_time_interval": "lap time %T1",
+		"value_time_track": "time %T1",
+
+		"__comment_special": "special unique parameters",
+		"special_comma": ", ",
+		"special_period": ". "
+	},
+	"distances_D1": {
+	    "__comment": "Parameter 'D1' is always used for simple static information like 'Distance is: xxx metres'",
+		"m": [
+			"%N1 meter, 1, 1",
+			"%N1 meters, 2, Inf",
+			"%NDec meters, 0, Inf"
+		],
+		"km": [
+			"%N1 kilometer, 1, 1",
+			"%N1 kilometers, 2, Inf",
+			"%NDec kilometers, 0, Inf"
+		],
+		"yd": [
+			"%N1 yard, 1, 1",
+			"%N1 yards, 2, Inf",
+			"%NDec yards, 0, Inf"
+		],
+		"ft": [
+			"%N1 foot, 1, 1",
+			"%N1 feet, 2, Inf",
+			"%NDec feet, 0, Inf"
+		],
+		"mi": [
+			"%N1 mile, 1, 1",
+			"%N1 miles, 2, Inf",
+			"%NDec miles, 0, Inf"
+		]
+	},
+	"distances_D2": {
+	    "__comment": "Parameter 'D2' is optional and may be used in 'Actions' above. It is useful in cases, where D1 and D2 are not equal. Like in 'After xxx metres, turn left'",
+	    "parent": "D1"
+	},
+	"energy_E1": {
+		"kj": [
+			"%N1 kilojoules, 0, Inf"
+		],
+		"kcal": [
+			"%N1 kilocalories, 0, Inf"
+		]
+	},
+	"paces_P1": {
+		"__comment": "Parameter 'P1' is always used for simple static information like 'Pace is: xxx min per km'",
+		"minperkm": [
+			"%T1 per kilometer, 0, Inf"
+		],
+		"minpermile": [
+			"%T1 per mile, 0, Inf"
+		],
+		"minpernmile": [
+			"%T1 per nautical mile, 0, Inf"
+		]
+	},
+	"speeds_V1": {
+	    "__comment": "Parameter 'V1' is always used for simple static information like 'Speed is: xxx kph'",
+        "kmh": [
+            "%N1 kilometer per hour, 1, 1",
+            "%N1 kilometers per hour, 2, Inf",
+            "%NDec kilometers per hour, 0, Inf"
+        ],
+        "milh": [
+            "%N1 mile per hour, 1, 1",
+            "%N1 miles per hour, 2, Inf",
+            "%NDec miles per hour, 0, Inf"
+        ],
+        "nmih": [
+            "%N1 nautical mile per hour, 1, 1",
+            "%N1 nautical miles per hour, 2, Inf",
+            "%NDec nautical miles per hour, 0, Inf"
+        ],
+        "knot": [
+            "%N1 knot, 1, 1",
+            "%N1 knots, 2, Inf",
+            "%NDec knots, 0, Inf"
+        ]
+	},
+    "times_T1": {
+        "__comment": "Parameter 'T1' is always used for simple static information like 'Time is: xxx sec'",
+        "hours": [
+            "%N1 hours, 0, 0",
+            "%N1 hour, 1, 1",
+            "%N1 hours, 2, Inf"
+        ],
+        "minutes": [
+            "%N1 minutes, 0, 0",
+            "%N1 minute, 1, 1",
+            "%N1 minutes, 2, Inf"
+        ],
+        "seconds": [
+            "%N1 seconds, 0, 0",
+            "%N1 second, 1, 1",
+            "%N1 seconds, 2, Inf"
+        ]
+    },
+    "times_T2": {
+	    "__comment": "Parameter 'T2' is optional and may be used in 'Actions' above. It is useful in cases, where T1 and T2 are not equal.",
+	    "parent": "T1"
+	},
+	"numbers_N1": {
+		"1": "one",
+		"2": "two",
+		"3": "three",
+		"4": "four",
+		"5": "five",
+		"6": "six",
+		"7": "seven",
+		"8": "eight",
+		"9": "nine",
+		"10": "ten",
+		"11": "eleven",
+		"12": "twelve",
+		"13": "thirteen",
+		"14": "fourteen",
+		"15": "fifteen",
+		"16": "sixteen",
+		"17": "seventeen",
+		"18": "eighteen",
+		"19": "nineteen",
+		"20": "twenty",
+		"30": "thirty",
+		"40": "forty",
+		"50": "fifty",
+		"60": "sixty",
+		"70": "seventy",
+		"80": "eighty",
+		"90": "ninety",
+		"100": "one hundred",
+		"200": "two hundred",
+		"300": "three hundred",
+		"400": "four hundred",
+		"500": "five hundred",
+		"600": "six hundred",
+		"700": "seven hundred",
+		"800": "eight hundred",
+		"900": "nine hundred",
+		"1000": "one thousand"
+	},
+	"numbers_N2": {
+		"1": "first",
+		"2": "second",
+		"3": "third",
+		"4": "fourth",
+		"5": "fifth",
+		"6": "sixth",
+		"7": "seventh",
+		"8": "eighth",
+		"9": "nineth"
+	}
+}

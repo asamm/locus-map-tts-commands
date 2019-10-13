@@ -1,0 +1,215 @@
+{
+	"version": 5,
+	"language": "sp",
+	"actions_A": {
+		"__comment_navigation": "todos los comandos de navegación posibles",
+		"action_dist": "después de %D %A",
+		"arrive_at_dest": "has llegado a destino",
+		"arrive_at_dest_dist": "después de %D, llegarás a tu destino",
+		"straight": "sigue derecho",
+		"right_bear": "gira a la derecha",
+		"right": "ve a la derecha",
+		"right_sharp": "acércate a la derecha",
+		"left_bear": "gira a la izquiera",
+		"left": "ve a la izquiera",
+		"left_sharp": "acércate a la izquierda",
+		"stay_right": "permanece a la derecha",
+		"stay_left": "permanece a la izquierda",
+		"take_exit_right": "toma la salida a la derecha",
+		"take_exit_left": "toma la salida a la izquierda",
+		"take_ramp_straight": "toma la subida",
+		"take_ramp_right": "toma la subida a la deracha",
+		"take_ramp_left": "toma la subida a la izquierda",
+		"merge": "únete",
+		"merge_right": "únete a la derecha",
+		"merge_right_on": "únete a la derecha en la calle %S",
+		"merge_left": "únete a la izquierda",
+		"merge_left_on": "únete a la izquierda en la calle %S",
+		"then": ", entonces",
+		"turn_u-turn": "gira en U",
+		"turn_u-turn_dist": "después de %D gira en U",
+		"recalculating": "espera, recalculando",
+		"roundabout_dist": "después de %D, rotonda",
+		"roundabout_dist_exit": "en la rotonda después de %D, toma la %N2 salida",
+		"roundabout_exit": "%N2 salida",
+		"pass_point": "%S",
+		"pass_point_dist": "%S después %D2",
+		"navigation_start_car": "Arrancamos",
+		"navigation_start_bicycle": "A rodar",
+		"navigation_start_foot": "A caminar",
+		"navigation_too_far_from_track": "La ruta se encuentra a %D a las %N1 en punto",
+		"tts_set": "Text-to-speech seteado correctamente",
+		"track_recalculated": "La ruta fue recalculada",
+
+		"__comment_poi_alert": "parámetros de alerta de POI",
+		"poi_alert_point_X": "El punto %S se encuentra a %D a las %N1 en punto",
+		"poi_alert_X_points": "%N1 puntos en vista"
+
+		"__comment_values": "valores que son usados en el administrador de entrenamiento",
+		"value_day_time": "%T1",
+		"value_heart_rate": "%N1 BPM",
+		"value_elevation_interval": "desnivel intervalo %D1",
+		"value_elevation_track": "desnivel %D1",
+		"value_heart_rate_current": "frecuencia cardíaca %N1 BPM",
+		"value_heart_rate_avg_interval": "frecuencia cardíaca intervalo %N1 BPM",
+		"value_pace_interval": "ritmo intervalo %P1",
+		"value_pace_track": "ritmo %P1",
+		"value_speed_avg_interval": "velocidad promedio intervalo %V1",
+		"value_speed_avg_track": "velocidad promedio %V1",
+		"value_time_current": "tiempo actual %T1",
+		"value_time_interval": "tiempo intervalo %T1",
+		"value_time_track": "tiempo %T1",
+
+		"__comment_special": "parámetros especiales únicos",
+		"special_comma": ", ",
+		"special_period": ". "
+	},
+	"distances_D1": {
+		"__comment": "EL parámetro 'D1' es usado para información estática simple como 'La distancia es: xxx metros'",
+		"m": [
+			"%N1 metro, 1, 1",
+			"%N1 metros, 2, Inf"
+			"%NDec meteros, 0, Inf"
+		],
+		"km": [
+			"%N1 kilómetro, 1, 1",
+			"%N1 kilómetros, 2, Inf"
+			"%NDec kilómetros, 0, Inf"
+		],
+		"yd": [
+			"%N1 yarda, 1, 1",
+			"%N1 yardas, 2, Inf"
+			"%NDec yardas, 0, Inf"
+		],
+		"ft": [
+			"%N1 pie, 1, 1",
+			"%N1 pies, 2, Inf"
+			"%NDec pies, 0, Inf"
+		],
+		"mi": [
+			"%N1 milla, 1, 1",
+			"%N1 millas, 2, Inf"
+			"%NDec millas, 0, Inf"
+		]
+	},
+	"distances_D2": {
+		"__comment": "El parámetro 'D2' es opcional y puede ser usado en 'Actions' anteriores. Éste es muy usado en casos donde D1 y D2 no son iguales. Como en 'Después de xxx metros, gira a la izquierda'",
+		"parent": "D1"
+	},
+	"paces_P1": {
+		"__comment": "El parámetro 'P1' es usado para información estática simple como 'El ritmo es: xxx min por km'",
+		"minperkm": [
+			"%T1 por kilómetro, 0, Inf"
+		],
+		"minpermile": [
+			"%T1 por milla, 0, Inf"
+		],
+		"minpernmile": [
+			"%T1 por milla náutica, 0, Inf"
+		]
+	},
+	"speeds_V1": {
+		"__comment": "El parámetro 'V1' es usado para información estática simple como 'La velocidad es: xxx kph'",
+		"kmh": [
+			"%N1 kilómetro por hora, 1, 1",
+			"%N1 kilómetros por hora, 2, Inf",
+			"%NDec kilómetros por hora, 0, Inf"
+		],
+		"milh": [
+			"%N1 milla por hora, 1, 1",
+			"%N1 millas por hora, 2, Inf",
+			"%NDec millas por hora, 0, Inf"
+		],
+		"nmih": [
+			"%N1 milla náutica por hora, 1, 1",
+			"%N1 millas náutica por hora, 2, Inf",
+			"%NDec millas náutica por hora, 0, Inf"
+		],
+		"knot": [
+			"%N1 nudo, 1, 1",
+			"%N1 nudos, 2, Inf",
+			"%NDec nudos, 0, Inf"
+		]
+	},
+	"times_T1": {
+		"__comment": "El parámetro 'T1' es usado para información estática simple como 'La hora es: xxx seg'",
+		"hours": [
+			"%N1 horas, 0, 0",
+			"%N1 hora, 1, 1",
+			"%N1 horas, 2, Inf"
+		],
+		"minutes": [
+			"%N1 minutos, 0, 0",
+			"%N1 minuto, 1, 1",
+			"%N1 minutos, 2, Inf"
+		],
+		"seconds": [
+			"%N1 segundos, 0, 0",
+			"%N1 segundo, 1, 1",
+			"%N1 segundos, 2, Inf"
+		]
+	},
+	"times_T2": {
+		"__comment": "El parámetro 'T2' es opcional y puede ser usado en 'Actions' anteriores. Éste es muy usado en casos donde T1 y T2 no son iguales.",
+		"parent": "T1"
+	},
+	"numbers_N1": {
+		"1": "uno",
+		"2": "dos",
+		"3": "tres",
+		"4": "cuatro",
+		"5": "cinco",
+		"6": "seis",
+		"7": "siete",
+		"8": "ocho",
+		"9": "nueve",
+		"10": "diez",
+		"11": "once",
+		"12": "doce",
+		"13": "trece",
+		"14": "catorce",
+		"15": "quince",
+		"16": "diesciseis",
+		"17": "diescisiete",
+		"18": "diesciocho",
+		"19": "diescinueve",
+		"20": "veinte",
+		"21": "veintiun",
+		"22": "veintidos",
+		"23": "veintitres",
+		"24": "veinticuatro",
+		"25": "veinticinco",
+		"26": "veintiseis",
+		"27": "veintisiete",
+		"28": "veintiocho",
+		"29": "veintinueve",
+		"30": "treinta",
+		"40": "cuarenta",
+		"50": "cincuenta",
+		"60": "sesenta",
+		"70": "setenta",
+		"80": "ochenta",
+		"90": "novecenta",
+		"100": "ciento",
+		"200": "doscientos",
+		"300": "trescientos",
+		"400": "cuatrocientos",
+		"500": "quinientos",
+		"600": "seiscientos",
+		"700": "setecientos",
+		"800": "ochocientos",
+		"900": "novecientos",
+		"1000": "mil"
+	},
+	"numbers_N2": {
+		"1": "primer",
+		"2": "segunda",
+		"3": "tercera",
+		"4": "cuarta",
+		"5": "quinta",
+		"6": "sexta",
+		"7": "séptima",
+		"8": "octava",
+		"9": "novena"
+	}
+}

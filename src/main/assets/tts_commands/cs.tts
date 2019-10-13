@@ -1,0 +1,321 @@
+{
+	"version": 8,
+	"language": "cs",
+	"actions_A": {
+		"action_dist": "Za %D2 %A",
+		"arrive_at_dest": "Dojeli jste do cíle",
+		"arrive_at_dest_dist": "Za %D2, budete u vašeho cíle",
+		"straight": "pokračujte rovně",
+		"right_bear": "odbočte mírně vpravo",
+		"right": "odbočte vpravo",
+		"right_sharp": "odbočte ostře vpravo",
+		"left_bear": "odbočte mírně vlevo",
+		"left": "odbočte vlevo",
+		"left_sharp": "odbočte ostře vlevo",
+		"stay_right": "držte se v pravém pruhu",
+		"stay_left": "držte se v levém pruhu",
+		"take_exit_right": "jeďte výjezdem vpravo",
+		"take_exit_left": "jeďte výjezdem vlevo",
+		"take_ramp_straight": "jeďte nájezdem před vámi",
+		"take_ramp_right": "jeďte nájezdem vpravo",
+		"take_ramp_left": "jeďte nájezdem vlevo",
+		"merge": "připojte se",
+		"merge_right": "najeďte vpravo",
+		"merge_right_on": "najeďte vpravo na silnici %S",
+		"merge_left": "najeďte vlevo",
+		"merge_left_on": "najeďte vlevo na silnici %S",
+		"then": ", pak",
+		"turn_u-turn": "otočte se",
+		"turn_u-turn_dist": "Za %D2 se otočte",
+		"recalculating": "vyčkejte, přepočítávám",
+		"roundabout_dist": "Za %D2, přijedete na kruhový objezd",
+		"roundabout_dist_exit": "Na kruhovém objezdu za %D2, sjeďte %N4 výjezdem",
+		"roundabout_exit": "%N3 výjezd",
+		"pass_point": "%S",
+		"pass_point_dist": "%S za %D2",
+		"navigation_start_car": "Můžeme vyrazit",
+		"navigation_start_bicycle": "Můžeme vyrazit",
+		"navigation_start_foot": "Můžeme vyrazit",
+		"navigation_too_far_from_track": "Trasa leží %D2 na %N5",
+		"tts_set": "Hlasový výstup korektně nastaven",
+		"track_recalculated": "Trať byla přepočtena",
+
+		"poi_alert_point_X": "Bod %S leží %D2 na %N5",
+		"poi_alert_X_points": "%N1 body v dosahu",
+
+		"value_altitude_current": "altitude %D1",
+		"value_cadence_interval": "kadence intervalu %N1",
+		"value_cadence_track": "kadence %N1",
+		"value_distance_interval": "délka intervalu %D1",
+		"value_distance_track": "vzdálenost %D1",
+		"value_device_battery": "baterie %N1 procent",
+		"value_elevation_downhill_interval": "klesání intervalu %D1",
+		"value_elevation_downhill_track": "klesání %D1",
+		"value_elevation_uphill_interval": "stoupání intervalu %D1",
+		"value_elevation_uphill_track": "stoupání %D1",
+		"value_energy_track": "energie %E1 ",
+		"value_heart_rate_current": "tep %N1 BPM",
+		"value_heart_rate_avg_interval": "průměrný tep %N1 BPM",
+		"value_pace_interval": "tempo intervalu %P1",
+		"value_pace_track": "tempo %P1",
+		"value_speed_avg_interval": "průměrná rychlost intervalu %V1",
+		"value_speed_avg_track": "průměrná rychlost %V1",
+		"value_time_current": "aktuální čas %T1",
+		"value_time_interval": "čas intervalu %T1",
+		"value_time_track": "čas %T1",
+
+		"value_day_time": "%T1",
+		"value_heart_rate": "%N1 BPM",
+
+        "special_comma": ", ",
+        "special_period": ". "
+	},
+	"distances_D1": {
+		"m": [
+			"%N1 metr, 1, 1",
+			"%N1 metry, 2, 4",
+			"%N1 metrů, 5, Inf",
+			"%NDec metru, 0, Inf"
+		],
+		"km": [
+			"%N1 kilometr, 1, 1",
+			"%N1 kilometry, 2, 4",
+			"%N1 kilometrů, 5, Inf",
+			"%NDec kilometru, 0, Inf"
+		],
+		"yd": [
+			"%N1 yard, 1, 1",
+			"%N1 yardy, 2, 4",
+			"%N1 yardů, 5, Inf",
+			"%NDec yardu, 0, Inf"
+		],
+		"ft": [
+			"%N2 stopa, 1, 1",
+			"%N2 stopy, 2, 4",
+			"%N2 stop, 5, Inf",
+			"%NDec stopy, 0, Inf"
+		],
+		"mi": [
+			"%N2 míle, 1, 4",
+			"%N1 mil, 5, Inf",
+			"%NDec míle, 0, Inf"
+		]
+	},
+	"distances_D2": {
+		"m": [
+			"%N1 metr, 1, 1",
+			"%N1 metry, 2, 4",
+			"%N1 metrů, 5, Inf",
+			"%NDec metru, 0, Inf"
+		],
+		"km": [
+			"%N1 kilometr, 1, 1",
+			"%N1 kilometry, 2, 4",
+			"%N1 kilometrů, 5, Inf",
+			"%NDec kilometru, 0, Inf"
+		],
+		"yd": [
+			"%N1 yard, 1, 1",
+			"%N1 yardy, 2, 4",
+			"%N1 yardů, 5, Inf",
+			"%NDec yardu, 0, Inf"
+		],
+		"ft": [
+			"%N2 stopu, 1, 1",
+			"%N2 stopy, 2, 4",
+			"%N2 stop, 5, Inf",
+			"%NDec stopy, 0, Inf"
+		],
+		"mi": [
+			"%N2 míly, 1, 1",
+			"%N2 míle, 2, 4",
+			"%N1 mil, 5, Inf",
+			"%NDec míle, 0, Inf"
+		]
+	},
+	"energy_E1": {
+		"kj": [
+			"%N1 kilodžaulů, 0, Inf"
+		],
+		"kcal": [
+			"%N1 kilokalorií, 0, Inf"
+		]
+	},
+	"paces_P1": {
+		"minperkm": [
+			"%T1 na kilometr, 0, Inf"
+		],
+		"minpermile": [
+			"%T1 na míly, 0, Inf"
+		],
+		"minpernmile": [
+			"%T1 na námořní míli, 0, Inf"
+		]
+	},
+	"speeds_V1": {
+        "kmh": [
+            "%N1 kilometr za hodinu, 1, 1",
+            "%N1 kilometry za hodinu, 2, 4",
+            "%N1 kilometrů za hodinu, 5, Inf",
+            "%NDec kilometru za hodinu, 0, Inf"
+        ],
+        "milh": [
+            "%N6 míle za hodinu, 1, 1",
+            "%N6 míle za hodinu, 2, 4",
+            "%N6 míl za hodinu, 5, Inf",
+            "%NDec míle za hodinu, 0, Inf"
+        ],
+        "nmih": [
+            "%N6 námořní míle za hodinu, 1, 4",
+            "%N6 námořních mil za hodinu, 5, Inf",
+            "%NDec námořní míle za hodinu, 0, Inf"
+        ],
+        "knot": [
+            "%N1 knot, 1, 1",
+            "%N1 knoty, 2, 4",
+            "%N1 knotů, 5, Inf",
+            "%NDec knotu, 0, Inf"
+        ]
+    },
+    "times_T1": {
+        "hours": [
+            "%N6 hodin, 0, 0",
+            "%N6 hodina, 1, 1",
+            "%N6 hodiny, 2, 4",
+            "%N6 hodin, 5, Inf"
+        ],
+        "minutes": [
+            "%N6 minut, 0, 0",
+            "%N6 minuta, 1, 1",
+            "%N6 minuty, 2, 4",
+            "%N6 minut, 5, Inf"
+        ],
+        "seconds": [
+            "%N6 sekund, 0, 0",
+            "%N6 sekunda, 1, 1",
+            "%N6 sekundy, 2, 4",
+            "%N6 sekund, 5, Inf"
+        ]
+    },
+	"numbers_N1": {
+		"1": "jeden",
+		"2": "dva",
+		"3": "tři",
+		"4": "čtyři",
+		"5": "pět",
+		"6": "šest",
+		"7": "sedm",
+		"8": "osm",
+		"9": "devět",
+		"10": "deset",
+		"11": "jedenáct",
+		"12": "dvanáct",
+		"13": "třináct",
+		"14": "čtrnáct",
+		"15": "patnáct",
+		"16": "šestnáct",
+		"17": "sedmnáct",
+		"18": "osmnáct",
+		"19": "devatenáct",
+		"20": "dvacet",
+        "21": "dvacet jedna",
+        "22": "dvacet dva",
+        "23": "dvacet tři",
+        "24": "dvacet čtyři",
+        "25": "dvacet pět",
+        "26": "dvacet šest",
+        "27": "dvacet sedm",
+        "28": "dvacet osm",
+        "29": "dvacet devět",
+		"30": "třicet",
+		"31": "třicet jedna",
+		"32": "třicet dva",
+		"33": "třicet tři",
+		"34": "třicet čtyři",
+		"35": "třicet pět",
+		"36": "třicet šest",
+		"37": "třicet sedm",
+		"38": "třicet osm",
+		"39": "třicet devět",
+		"40": "čtyřicet",
+		"41": "čtyřicet jedna",
+		"42": "čtyřicet dva",
+		"43": "čtyřicet tři",
+		"44": "čtyřicet čtyři",
+		"45": "čtyřicet pět",
+		"46": "čtyřicet šest",
+		"47": "čtyřicet sedm",
+		"48": "čtyřicet osm",
+		"49": "čtyřicet devět",
+		"50": "padesát",
+		"51": "padesát jedna",
+		"52": "padesát dva",
+		"53": "padesát tři",
+		"54": "padesát čtyři",
+		"55": "padesát pět",
+		"56": "padesát šest",
+		"57": "padesát sedm",
+		"58": "padesát osm",
+		"59": "padesát devět",
+		"60": "šedesát",
+		"70": "sedmdesát",
+		"80": "osmdesát",
+		"90": "devadesát",
+		"100": "sto",
+		"200": "dvěstě",
+		"300": "třista",
+		"400": "čtyřista",
+		"500": "pětset",
+		"600": "šestset",
+		"700": "sedmset",
+		"800": "osmset",
+		"900": "devětset",
+		"1000": "tisíc"
+	},
+	"numbers_N2": {
+	    "parent": "N1",
+		"1": "jednu",
+		"2": "dvě"
+	},
+	"numbers_N3": {
+		"1": "první",
+		"2": "druhý",
+		"3": "třetí",
+		"4": "čtvrtý",
+		"5": "pátý",
+		"6": "šestý",
+		"7": "sedmý",
+		"8": "osmý",
+		"9": "devátý"
+	},
+	"numbers_N4": {
+		"1": "prvním",
+		"2": "druhým",
+		"3": "třetím",
+		"4": "čtvrtým",
+		"5": "pátým",
+		"6": "šestým",
+		"7": "sedmým",
+		"8": "osmým",
+		"9": "devátým"
+	},
+	"numbers_N5": {
+		"1": "jedné hodině",
+		"2": "dvou hodinách",
+		"3": "třech hodinách",
+		"4": "čtyřech hodinách",
+		"5": "pěti hodinách",
+		"6": "šesti hodinách",
+		"7": "sedmi hodinách",
+		"8": "osmi hodinách",
+		"9": "devíti hodinách",
+		"10": "desíti hodinách",
+		"11": "jedenácti hodinách",
+		"12": "dvanácti hodinách"
+	},
+	"numbers_N6": {
+	    "parent": "N1",
+		"1": "jedna",
+		"2": "dvě"
+	}
+}

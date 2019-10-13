@@ -1,0 +1,246 @@
+{
+	"version": 4,
+	"language": "sk",
+	"actions_A": {
+		"action_dist": "O %D2 %A",
+		"arrive_at_dest": "Dorazili ste do cieľa",
+		"arrive_at_dest_dist": "O %D2, budete v cieli",
+		"straight": "pokračujte rovno",
+		"right_bear": "odbočte mierne doprava",
+		"right": "odbočte doprava",
+		"right_sharp": "odbočte ostro doprava",
+		"left_bear": "odbočte mierne doľava",
+		"left": "odbočte doľava",
+		"left_sharp": "odbočte ostro doľava",
+		"stay_right": "držte sa v pravom pruhu",
+		"stay_left": "držte sa v ľavom pruhu",
+		"take_exit_right": "choďte výjazdom vpravo",
+		"take_exit_left": "choďte výjazdom vľavo",
+		"take_ramp_straight": "choďte nájazdom priamo",
+		"take_ramp_right": "choďte nájazdom vpravo",
+		"take_ramp_left": "choďte nájazdom vľavo",
+		"merge": "pripojte sa",
+		"merge_right": "napojte sa vpravo",
+		"merge_right_on": "napojte sa vpravo na cestu %S",
+		"merge_left": "napojte sa vľavo",
+		"merge_left_on": "napojte sa vľavo na cestu %S",
+		"then": ", potom",
+		"turn_u-turn": "otočte sa",
+		"turn_u-turn_dist": "O %D2 sa otočte",
+		"recalculating": "počkajte, prepočítávam",
+		"roundabout_dist": "O %D2, prídete na kruhový objazd",
+		"roundabout_dist_exit": "O %D2, na kruhovom objazde, odbočte %N4 výjazdom",
+		"roundabout_exit": "%N3 výjazd",
+		"pass_point": "%S",
+		"pass_point_dist": "%S o %D2",
+		"navigation_start_car": "Môžeme vyraziť",
+		"navigation_start_bicycle": "Môžeme vyraziť",
+		"navigation_start_foot": "Môžeme vyraziť",
+		"navigation_too_far_from_track": "Trasa leží %D2 na %N5",
+		"tts_set": "Hlasový výstup je nastavený",
+		"track_recalculated": "Trasa bola prepočítaná",
+
+		"poi_alert_point_X": "Bod %S leží %D2 na %N5",
+		"poi_alert_X_points": "počet bodov v dosahu, %N1",
+
+		"heart_rate_value": "%N1 tepov za minútu",
+
+        "special_comma": ", ",
+        "special_period": ". "
+	},
+	"distances_D1": {
+		"m": [
+			"%N1 meter, 1, 1",
+			"%N1 metre, 2, 4",
+			"%N1 metrov, 5, Inf",
+			"%NDec metra, 0, Inf"
+		],
+		"km": [
+			"%N1 kilometer, 1, 1",
+			"%N1 kilometre, 2, 4",
+			"%N1 kilometrov, 5, Inf",
+			"%NDec kilometra, 0, Inf"
+		],
+		"yd": [
+			"%N1 yard, 1, 1",
+			"%N1 yardy, 2, 4",
+			"%N1 yardov, 5, Inf",
+			"%NDec yardu, 0, Inf"
+		],
+		"ft": [
+			"%N2 stopa, 1, 1",
+			"%N2 stopy, 2, 4",
+			"%N2 stôp, 5, Inf",
+			"%NDec stopy, 0, Inf"
+		],
+		"mi": [
+			"%N2 míľa, 1, 1",
+			"%N2 míle, 2, 4", 
+			"%N1 míľ, 5, Inf",
+			"%NDec míle, 0, Inf"
+		]
+	},
+	"distances_D2": {
+		"m": [
+			"%N1 meter, 1, 1",
+			"%N1 metre, 2, 4",
+			"%N1 metrov, 5, Inf",
+			"%NDec metra, 0, Inf"
+		],
+		"km": [
+			"%N1 kilometer, 1, 1",
+			"%N1 kilometre, 2, 4",
+			"%N1 kilometrov, 5, Inf",
+			"%NDec kilometra, 0, Inf"
+		],
+		"yd": [
+			"%N1 yarda, 1, 1",
+			"%N1 yardy, 2, 4",
+			"%N1 yardov, 5, Inf",
+			"%NDec yardu, 0, Inf"
+		],
+		"ft": [
+			"%N2 stopu, 1, 1",
+			"%N2 stopy, 2, 4",
+			"%N2 stôp, 5, Inf",
+			"%NDec stopy, 0, Inf"
+		],
+		"mi": [
+			"%N2 míľu, 1, 1",
+			"%N2 míle, 2, 4",
+			"%N1 míľ, 5, Inf",
+			"%NDec míle, 0, Inf"
+		]
+	},
+	"speeds_V1": {
+        "kmh": [
+            "%N1 kilometer za hodinu, 1, 1",
+            "%N1 kilometre za hodinu, 2, 4",
+            "%N1 kilometrov za hodinu, 5, Inf",
+            "%NDec kilometra za hodinu, 0, Inf"
+        ],
+        "milh": [
+            "%N6 míľa za hodinu, 1, 1",
+            "%N6 míle za hodinu, 2, 4",
+            "%N6 míľ za hodinu, 5, Inf",
+            "%NDec míle za hodinu, 0, Inf"
+        ],
+        "nmih": [
+            "%N6 námorná míľa za hodinu, 1, 1",
+            "%N6 námornė míle za hodinu, 2, 4", 
+            "%N6 námorných míľ za hodinu, 5, Inf",
+            "%NDec námornej míle za hodinu, 0, Inf"
+        ],
+        "knot": [
+            "%N1 uzol, 1, 1",
+            "%N1 uzly, 2, 4",
+            "%N1 uzlov, 5, Inf",
+            "%NDec uzla, 0, Inf"
+        ]
+    },
+    "times_T1": {
+        "hours": [
+            "%N6 hodín, 0, 0",
+            "%N6 hodina, 1, 1",
+            "%N6 hodiny, 2, 4",
+            "%N6 hodín, 5, Inf"
+        ],
+        "minutes": [
+            "%N6 minút, 0, 0",
+            "%N6 minúta, 1, 1",
+            "%N6 minúty, 2, 4",
+            "%N6 minút, 5, Inf"
+        ],
+        "seconds": [
+            "%N6 sekúnd, 0, 0",
+            "%N6 sekunda, 1, 1",
+            "%N6 sekundy, 2, 4",
+            "%N6 sekúnd, 5, Inf"
+        ]
+    },
+	"numbers_N1": {
+		"1": "jeden",
+		"2": "dva",
+		"3": "tri",
+		"4": "štyri",
+		"5": "päť",
+		"6": "šesť",
+		"7": "sedem",
+		"8": "osem",
+		"9": "deväť",
+		"10": "desať",
+		"11": "jedenácť",
+		"12": "dvanácť",
+		"13": "trinácť",
+		"14": "štrnácť",
+		"15": "pätnácť",
+		"16": "šestnácť",
+		"17": "sedemnácť",
+		"18": "osemnácť",
+		"19": "devätnácť",
+		"20": "dvadsať",
+		"30": "tridsať",
+		"40": "štyridsať",
+		"50": "päťdesiat",
+		"60": "šesdesiat",
+		"70": "sedemdesiat",
+		"80": "osemdesiat",
+		"90": "deväťdesiat",
+		"100": "sto",
+		"200": "dvesto",
+		"300": "tristo",
+		"400": "štyristo",
+		"500": "päťsto",
+		"600": "šesťsto",
+		"700": "sedemsto",
+		"800": "osemsto",
+		"900": "deväťsto",
+		"1000": "tisíc"
+	},
+	"numbers_N2": {
+	    "parent": "N1",
+		"1": "jednu",
+		"2": "dve"
+	},
+	"numbers_N3": {
+		"1": "prvý",
+		"2": "druhý",
+		"3": "tretí",
+		"4": "štvrtý",
+		"5": "piaty",
+		"6": "šiesty",
+		"7": "siedmy",
+		"8": "ôsmy",
+		"9": "deviaty"
+	},
+	"numbers_N4": {
+		"1": "prvým",
+		"2": "druhým",
+		"3": "tretím",
+		"4": "štvrtým",
+		"5": "piatym",
+		"6": "šiestym",
+		"7": "siedmym",
+		"8": "ôsmym",
+		"9": "deviatym"
+	},
+	"numbers_N5": {
+		"1": "jednej hodine",
+		"2": "dvoch hodinách",
+		"3": "troch hodinách",
+		"4": "štyroch hodinách",
+		"5": "piatich hodinách",
+		"6": "šiestich hodinách",
+		"7": "siedmich hodinách",
+		"8": "ôsmich hodinách",
+		"9": "deviatich hodinách",
+		"10": "desiatich hodinách",
+		"11": "jedenáctich hodinách",
+		"12": "dvanáctich hodinách"
+	},
+	"numbers_N6": {
+	    "parent": "N1",
+		"1": "jedna",
+		"2": "dve"
+	}
+}

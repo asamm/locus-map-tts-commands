@@ -1,0 +1,171 @@
+{
+	"version": 4,
+	"language": "nl",
+	"actions_A": {
+		"action_dist": "na %D2 %A",
+		"arrive_at_dest": "bestemming bereikt",
+		"arrive_at_dest_dist": "%D2 van uw bestemming",
+		"straight": "rechtdoor",
+		"right_bear": "rechtsaf",
+		"right": "rechts",
+		"right_sharp": "scherp rechts",
+		"left_bear": "linksaf",
+		"left": "links",
+		"left_sharp": "scherp Links",
+		"stay_right": "blijf rechts",
+		"stay_left": "blijf links",
+		"take_exit_right": "neem rechtse afslag",
+		"take_exit_left": "neem linkse afslag",
+		"take_ramp_straight": "neem oprit rechtdoor",
+		"take_ramp_right": "neem oprit rechts",
+		"take_ramp_left": "neem oprit links",
+		"merge": "samenvoegen",
+		"merge_right": "rechts samenvoegen",
+		"merge_right_on": "rechts samenvoegen op %S",
+		"merge_left": "links samenvoegen",
+		"merge_left_on": "links samenvoegen op %S",
+		"then": ", dan",
+		"turn_u-turn": "keer om",
+		"turn_u-turn_dist": "na %D2 keer om",
+		"recalculating": "herberekenen",
+		"roundabout_dist": "na %D2, rotonde",
+		"roundabout_dist_exit": "rotonde op %D2, neem %N2 afslag",
+		"roundabout_exit": "%N2 afslag",
+		"pass_point": "%S",
+		"pass_point_dist": "na %D2 %S ",
+		"navigation_start_car": "laten we rijden",
+		"navigation_start_bicycle": "laten we fietsen",
+		"navigation_start_foot": "laten we gaan",
+		"navigation_too_far_from_track": "Track op %D2 op %N1 uur",
+		"tts_set": "Tekst-naar-spraak versie 4 correct ingesteld",
+		"track_recalculated": "Weg is herberekend",		
+		
+		"poi_alert_point_X": "%S",
+		"poi_alert_X_points": "%N1 punten in bereik",
+		
+		"heart_rate_value": "hartslag %N1"
+	},
+	"distances_D1": {
+	    "__comment": "Parameter 'D1' is always used for simple static information like 'Distance is: xxx metres'",
+		"m": [
+			"%N1 meter, 1, 1",
+			"%N1 meters, 2, Inf",
+			"%NDec meters, 0, Inf"
+		],
+		"km": [
+			"%N1 kilometer, 1, 1",
+			"%N1 kilometers, 2, Inf",
+			"%NDec kilometers, 0, Inf"
+		],
+		"yd": [
+			"%N1 yard, 1, 1",
+			"%N1 yards, 2, Inf",
+			"%NDec yards, 0, Inf"
+		],
+		"ft": [
+			"%N1 voet, 1, 1",
+			"%N1 voet, 2, Inf",
+			"%NDec voet, 0, Inf"
+		],
+		"mi": [
+			"%N1 mijl, 1, 1",
+			"%N1 mijlen, 2, Inf",
+			"%NDec mijlen, 0, Inf"
+		]
+	},
+	"distances_D2": {
+	    "__comment": "Parameter 'D2' is optional and may be used in 'Actions' above. It is useful in cases, where D1 and D2 are not equal. Like in 'After xxx metres, turn left'",
+	    "parent": "D1"
+	},
+	"speeds_V1": {
+	    "__comment": "Parameter 'V1' is always used for simple static information like 'Speed is: xxx metres'",
+        "kmh": [
+            "%N1 kilometer per uur, 1, 1",
+            "%N1 kilometers per uur, 2, Inf",
+            "%NDec kilometers per uur, 0, Inf"
+        ],
+        "milh": [
+            "%N1 mijl per uur, 1, 1",
+            "%N1 mijl per uur, 2, Inf",
+            "%NDec mijlen per uur, 0, Inf"
+        ],
+        "nmih": [
+            "%N1 zeemijl per uur, 1, 1",
+            "%N1 zeemijl per uur, 2, Inf",
+            "%NDec zeemijlen per uur, 0, Inf"
+        ],
+        "knot": [
+            "%N1 kopent, 1, 1",
+            "%N1 knopen, 2, Inf",
+            "%NDec knopen, 0, Inf"
+        ]
+	},
+    "times_T1": {
+        "__comment": "Parameter 'T1' is always used for simple static information like 'Time is: xxx metres'",
+        "hours": [
+             "%N1 uren, 0, 0",
+             "%N1 uur, 1, 1",
+            "%N1 uren, 2, Inf"
+        ],
+        "minutes": [
+            "%N1 minuten, 0, 0",
+            "%N1 minuut, 1, 1",
+            "%N1 minuten, 2, Inf"
+        ],
+        "seconds": [
+            "%N1 seconden, 0, 0",
+            "%N1 second, 1, 1",
+            "%N1 seconden, 2, Inf"
+        ]
+    },
+	"numbers_N1": {
+		"1": "een",
+		"2": "twee",
+		"3": "drie",
+		"4": "vier",
+		"5": "vijf",
+		"6": "zes",
+		"7": "zeven",
+		"8": "acht",
+		"9": "negen",
+		"10": "tien",
+		"11": "elf",
+		"12": "twaalf",
+		"13": "dertien",
+		"14": "veertien",
+		"15": "vijftien",
+		"16": "zestien",
+		"17": "zeventien",
+		"18": "achtien",
+		"19": "negentien",
+		"20": "twintig",
+		"30": "dertig",
+		"40": "veertig",
+		"50": "vijftig",
+		"60": "zestig",
+		"70": "zeventig",
+		"80": "tachtig",
+		"90": "negentig",
+		"100": "honderd",
+		"200": "twee honderd",
+		"300": "drie honderd",
+		"400": "vier honderd",
+		"500": "vijf honderd",
+		"600": "zes honderd",
+		"700": "zeven honderd",
+		"800": "acht honderd",
+		"900": "negen honderd",
+		"1000": "duizend"
+	},
+	"numbers_N2": {
+		"1": "eerste",
+		"2": "tweede",
+		"3": "derde",
+		"4": "vierde",
+		"5": "vijfde",
+		"6": "zesde",
+		"7": "zevende",
+		"8": "achtste",
+		"9": "negende"
+	}
+}

@@ -1,0 +1,196 @@
+{
+	"version": 3,
+	"language": "pl",
+	"actions_A": {
+		"action_dist": "za %D2 %A",
+		"arrive_at_dest": "dotarłeś do celu",
+		"arrive_at_dest_dist": "za %D2, dotrzesz do celu",
+		"straight": "kontynuuj prosto",
+		"right_bear": "skręć lekko w prawo",
+		"right": "skręć w prawo",
+		"right_sharp": "skręć ostro w prawo",
+		"left_bear": "skręć lekko w lewo",
+		"left": "skręć w lewo",
+		"left_sharp": "skręć ostro w lewo",
+		"stay_right": "trzymaj się prawej",
+		"stay_left": "trzymaj się lewej",
+		"take_exit_right": "zjedź wyjazdem po prawej",
+		"take_exit_left": "zjedź wyjazdem po lewej",
+		"take_ramp_straight": "wjedź wjazdem na wprost",
+		"take_ramp_right": "wjedź wjazdem po prawej",
+		"take_ramp_left": "wjedź wjazdem po lewej",
+		"merge": "połączenie",
+		"merge_right": "połączenie w prawo",
+		"merge_right_on": "połączenie w prawo z drogą %S",
+		"merge_left": "połączenie w lewo",
+		"merge_left_on": "połączenie w lewo z drogą %S",
+		"then": ", następnie",
+		"turn_u-turn": "zawróć",
+		"turn_u-turn_dist": "za %D2 zawróć",
+		"recalculating": "przeliczam trasę",
+		"roundabout_dist": "za %D2 wjedź na rondo",
+		"roundabout_dist_exit": "za %D2 wjedź na rondo, następnie zjedź %N2 zjazdem",
+		"roundabout_exit": "zjedź %N2 zjazdem",
+		"navigation_start_car": "Trasa przygotowana",
+		"navigation_start_bicycle": "Trasa przygotowana",
+		"navigation_start_foot": "Trasa przygotowana",
+		"navigation_too_far_from_track": "Trasa w odległości %D2 na %N3 godzinie",
+		"tts_set": "System głosowy działa prawidłowo",
+		"track_recalculated": "Trasa została przeliczona",
+		
+		"poi_alert_point_X": "punkt ostrzegawczy %S w odległości %D2 na %N3 godzinie",
+		"poi_alert_X_points": "w pobliżu są punkty ostrzegawcze. %N1",
+
+		"heart_rate_value": "%N1 uderzeń na minutę",
+
+		"special_comma": ", ",
+		"special_period": ". "
+	},
+	"distances_D1": {
+	    "__comment": "Parameter 'D1' is always used for simple static information like 'Distance is: xxx metres'",
+		"m": [
+			"%N1 metr, 1, 1",
+			"%N1 metry, 2, 4",
+			"%N1 metrów, 5, Inf",
+			"%NDec metra, 0, Inf"
+		],
+		"km": [
+			"%N1 kilometr, 1, 1",
+			"%N1 kilometry, 2, 4",
+			"%N1 kilometrów, 5, Inf",
+			"%NDec kilometra, 0, Inf"
+		],
+		"yd": [
+			"%N1 yard, 1, 1",
+			"%N1 yards, 2, Inf",
+			"%NDec yards, 0, Inf"
+		],
+		"ft": [
+			"%N1 foot, 1, 1",
+			"%N1 feet, 2, Inf",
+			"%NDec feet, 0, Inf"
+		],
+		"mi": [
+			"%N1 mile, 1, 1",
+			"%N1 miles, 2, Inf",
+			"%NDec miles, 0, Inf"
+		]
+	},
+	"distances_D2": {
+	    "__comment": "Parameter 'D2' is optional and may be used in 'Actions' above. It is useful in cases, where D1 and D2 are not equal. Like in 'After xxx metres, turn left'",
+	    "parent": "D1"
+	},
+	"speeds_V1": {
+	    "__comment": "Parameter 'V1' is always used for simple static information like 'Speed is: xxx metres'",
+        "kmh": [
+            "%N1 kilometr na godzinę, 1, 1",
+            "%N1 kilometry na godzinę, 2, 4",
+            "%N1 kilometrów na godzinę, 5, Inf",
+            "%NDec kilometra na godzinę, 0, Inf"
+        ],
+        "milh": [
+            "%N1 mila na godzinę, 1, 1",
+            "%N1 mile na godzinę, 2, 4",
+            "%N1 mil na godzinę, 5, Inf",
+            "%NDec mili na godzinę, 0, Inf"
+        ],
+        "nmih": [
+            "%N1 mila morska na godzinę, 1, 1",
+            "%N1 mile morskie na godzinę, 2, 4",
+            "%N1 mil morskich na godzinę, 5, Inf",
+            "%NDec mili morskiej na godzinę, 0, Inf"
+        ],
+        "knot": [
+            "%N1 węzeł, 1, 1",
+            "%N1 węzły, 2, 4",
+            "%N1 węzłów, 5, Inf",
+            "%NDec węzła, 0, Inf"
+        ]
+	},
+    "times_T1": {
+        "__comment": "Parameter 'T1' is always used for simple static information like 'Time is: xxx metres'",
+        "hours": [
+            "%N1 godzin, 0, 0",
+            "%N1 godzina, 1, 1",
+            "%N1 godziny, 2, 4",
+            "%N1 godzin, 5, Inf"
+        ],
+        "minutes": [
+            "%N1 minut, 0, 0",
+            "%N1 minuta, 1, 1",
+            "%N1 minuty, 2, 4",
+            "%N1 minut, 5, Inf"
+        ],
+        "seconds": [
+            "%N1 sekund, 0, 0",
+            "%N1 sekunda, 1, 1",
+            "%N1 sekundy, 2, 4",
+            "%N1 sekund, 5, Inf"
+        ]
+    },
+	"numbers_N1": {
+		"1": "jeden",
+		"2": "dwa",
+		"3": "trzy",
+		"4": "cztery",
+		"5": "pięć",
+		"6": "sześć",
+		"7": "siedem",
+		"8": "osiem",
+		"9": "dziewięć",
+		"10": "dziesięć",
+		"11": "jedenaście",
+		"12": "dwanaście",
+		"13": "trzynaście",
+		"14": "czternaście",
+		"15": "piętnaście",
+		"16": "szesnaście",
+		"17": "siedemnaście",
+		"18": "osiemnaście",
+		"19": "dziewiętnaście",
+		"20": "dwadzieścia",
+		"30": "trzydzieści",
+		"40": "czterdzieści",
+		"50": "pięćdziesiąt",
+		"60": "sześćdziesiąt",
+		"70": "siedemdziesiąt",
+		"80": "osiemdziesiąt",
+		"90": "dziewięćdziesiąt",
+		"100": "sto",
+		"200": "dwieście",
+		"300": "trzysta",
+		"400": "czterysta",
+		"500": "pięćset",
+		"600": "sześćset",
+		"700": "siedemset",
+		"800": "osiemset",
+		"900": "dziewięćset",
+		"1000": "tysiąc"
+	},
+	"numbers_N2": {
+		"1": "pierwszym",
+		"2": "drugim",
+		"3": "trzecim",
+		"4": "czwartym",
+		"5": "piątym",
+		"6": "szóstym",
+		"7": "siódmym",
+		"8": "ósmym",
+		"9": "dziewiątym"
+	},
+	"numbers_N3": {
+		"1": "pierwszej",
+		"2": "drugiej",
+		"3": "trzeciej",
+		"4": "czwartej",
+		"5": "piątej",
+		"6": "szóstej",
+		"7": "siódmej",
+		"8": "ósmej",
+		"9": "dziewiątej",
+		"10": "dziesiątej",
+		"11": "jedenastej",
+		"12": "dwunastej"
+	}
+
+}

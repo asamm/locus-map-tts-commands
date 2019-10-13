@@ -1,0 +1,221 @@
+{
+	"version": 5,
+	"language": "de",
+	"actions_A": {
+		"__comment_navigation": "all possible navigation commands",
+		"action_dist": "nach %D2 %A",
+		"arrive_at_dest": "du hast dein ziel erreicht.",
+		"arrive_at_dest_dist": "nach %D2 hast du dein ziel erreicht.",
+		"straight": "folge dem straßenverlauf",
+		"right_bear": "nach rechts",
+		"right": "biege rechts ab",
+		"right_sharp": "biege scharf rechts ab",
+		"left_bear": "nach links",
+		"left": "biege links ab",
+		"left_sharp": "biege scharf links ab",
+		"stay_right": "bleib rechts",
+		"stay_left": "bleib links",
+		"take_exit_right": "nimm die ausfahrt rechts",
+		"take_exit_left": "nimm die ausfahrt links",
+		"take_ramp_straight": "nimm die auffahrt vor dir",
+		"take_ramp_right": "nimm die auffahrt rechts",
+		"take_ramp_left": "nimm die auffahrt links",
+		"merge": "biege ab",
+		"merge_right": "fahre rechts",
+		"merge_right_on": "fahre rechts in die %S",
+		"merge_left": "fahre links",
+		"merge_left_on": "fahre links in die %S",
+		"then": " dann,",
+		"turn_u-turn": "drehe nach möglickkeit um",
+		"turn_u-turn_dist": "kehre nach %D2 um",
+		"recalculating": "neuberechnung läuft",
+		"roundabout_dist": "nach %D2 kreisverkehr",
+		"roundabout_dist_exit": "%D2 kreisverkehr, %N2 ausfahrt",
+		"roundabout_exit": "%N2 ausfahrt",
+		"pass_point": "%S",
+		"pass_point_dist": "%S nach %D2",
+		"navigation_start_car": "die zielführung wird gestartet.",
+		"navigation_start_bicycle": "die zielführung wird gestartet.",
+		"navigation_start_foot": "die zielführung wird gestartet.",
+		"navigation_too_far_from_track": "trackabweichung. %D2 %N1 uhr",
+		"tts_set": "Die Deutsche TextschprachausgabeDatei in der Version 5, wurde erfolgreich geladen.",
+		"track_recalculated": "strecke neu berechnet",
+
+		"__comment_poi_alert": "POI Alert parameters",
+		"poi_alert_point_X": "wegpunkt %S abweichung %D2 %N1 Uhr",
+		"poi_alert_X_points": "%N1 punkte in reichweite",
+
+		"__comment_values": "values that are usually used in training manager",
+		"value_distance_interval": "intervall distanz %D1",
+		"value_distance_track": "distanz %D1",
+		"value_elevation_interval": "intervall höhenmeter %D1",
+		"value_elevation_track": "höhenmeter %D1",
+		"value_heart_rate_current": "herzfrequenz %N1 schläge pro minute",
+		
+		"value_heart_rate": "Puls %N1",
+		"value_pace_interval": "intervall tempo %P1",
+		"value_pace_track": "tempo %P1",
+		"value_speed_avg_interval": "intervall durchschmittsgeschwindigkeit %V1",
+		"value_speed_avg_track": "track durchschnittsgeschwindigkeit %V1",
+		"value_time_current": "aktuelle uhrzeit %T2",
+		"value_time_interval": "intervall zeit %T1",
+		"value_time_track": "zeit %T1",
+
+		"__comment_special": "special unique parameters",
+		"special_comma": ", ",
+		"special_period": ". "
+	},
+	"distances_D1": {
+		"__comment": "Parameter 'D1' is always used for simple static information like 'Distance is: xxx metres'",
+		"m": [
+			"%N1 meter, 1, 1",
+			"%N1 meter, 2, Inf",
+			"%NDec meter, 0, Inf"
+		],
+		"km": [
+			"zirka %N1 kilometer, 1, 1",
+			"zirka %N1 kilometer, 2, Inf",
+			"zirka %NDec kilometer, 0, Inf"
+		],
+		"yd": [
+			"zirka %N1 yard, 1, 1",
+			"zirka %N1 yards, 2, Inf",
+			"zirka %NDec yards, 0, Inf"
+		],
+		"ft": [
+			"%N1 fuss, 1, 1",
+			"%N1 fuss, 2, Inf",
+			"%NDec fuss, 0, Inf"
+		],
+		"mi": [
+			"zirka %N1 meile, 1, 1",
+			"zirka %N1 meilen, 2, Inf",
+			"zirka %NDec meilen, 0, Inf"
+		]
+	},
+	"distances_D2": {
+		"__comment": "Parameter 'D2' is optional and may be used in 'Actions' above. It is useful in cases, where D1 and D2 are not equal. Like in 'After xxx metres, turn left'",
+		"parent": "D1"
+	},
+	"paces_P1": {
+		"__comment": "Parameter 'P1' is always used for simple static information like 'Pace is: xxx min per km'",
+		"minperkm": [
+			"%T1 pro kilometer, 0, Inf"
+		],
+		"minpermile": [
+			"%T1 pro meile, 0, Inf"
+		],
+		"minpernmile": [
+			"%T1 pro nautische meile, 0, Inf"
+		]
+	},
+	"speeds_V1": {
+		"__comment": "Parameter 'V1' is always used for simple static information like 'Speed is: xxx kph'",
+		"kmh": [
+			"%N1 kilometer pro stunde, 1, 1",
+			"%N1 kilometer pro stunde, 2, Inf",
+			"%NDec kilometer pro stunde, 0, Inf"
+		],
+		"milh": [
+			"%N1 meile pro stunde, 1, 1",
+			"%N1 meilen pro stunde, 2, Inf",
+			"%NDec meilen pro stunde, 0, Inf"
+		],
+		"nmih": [
+			"%N1 nautische meile pro stunde, 1, 1",
+			"%N1 nautische meilen pro stunde, 2, Inf",
+			"%NDec nautische meilen pro stunde, 0, Inf"
+		],
+		"knot": [
+			"%N1 knoten, 1, 1",
+			"%N1 knoten, 2, Inf",
+			"%NDec knoten, 0, Inf"
+		]
+	},
+	"times_T1": {
+		"__comment": "Parameter 'T1' is always used for simple static information like 'Time is: xxx sec'",
+		"hours": [
+			"%N1 stunden, 0, 0",
+			"%N1 stunde, 1, 1",
+			"%N1 stunden, 2, Inf"
+		],
+		"minutes": [
+			"%N1 minuten, 0, 0",
+			"%N1 minute, 1, 1",
+			"%N1 minuten, 2, Inf"
+		],
+		"seconds": [
+			"%N1 sekunden, 0, 0",
+			"%N1 sekunde, 1, 1",
+			"%N1 sekunden, 2, Inf"
+		]
+	},
+	"times_T2": {
+		"__comment": "Parameter 'T2' is optional and may be used in 'Actions' above. It is useful in cases, where T1 and T2 are not equal.",
+		"hours": [
+			"%N1 Uhr, 0, 0",
+			"%N1 Uhr, 1, 1",
+			"%N1 Uhr, 2, Inf"
+		],
+		"minutes": [
+			"%N1 minuten, 0, 0",
+			"%N1 minute, 1, 1",
+			"%N1 minuten, 2, Inf"
+		],
+		"seconds": [
+			"%N1 sekunden, 0, 0",
+			"%N1 sekunde, 1, 1",
+			"%N1 sekunden, 2, Inf"
+		]
+	},
+	"numbers_N1": {
+		"1": "einem",
+		"2": "zwei",
+		"3": "drei",
+		"4": "vier",
+		"5": "fünf",
+		"6": "sechs",
+		"7": "sieben",
+		"8": "acht",
+		"9": "neun",
+		"10": "zehn",
+		"11": "elf",
+		"12": "zwölf",
+		"13": "dreizehn",
+		"14": "vierzehn",
+		"15": "fünfzehn",
+		"16": "sechzehn",
+		"17": "siebzehn",
+		"18": "achtzehn",
+		"19": "neunzehn",
+		"20": "zwanzig",
+		"30": "dreissig",
+		"40": "vierzig",
+		"50": "fünfzig",
+		"60": "sechzig",
+		"70": "siebzig",
+		"80": "achtzig",
+		"90": "neunzig",
+		"100": "einhundert",
+		"200": "zweihundert",
+		"300": "dreihundert",
+		"400": "vierhundert",
+		"500": "fünfhundert",
+		"600": "sechshundert",
+		"700": "siebenhundert",
+		"800": "achthundert",
+		"900": "neunhundert",
+		"1000": "eintausend"
+	},
+	"numbers_N2": {
+		"1": "erste",
+		"2": "zweite",
+		"3": "dritte",
+		"4": "vierte",
+		"5": "fünfte",
+		"6": "sechste",
+		"7": "siebente",
+		"8": "achte",
+		"9": "neunte"
+	}
+}
