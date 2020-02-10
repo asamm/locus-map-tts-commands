@@ -40,7 +40,7 @@
 		"tts_set": "Tekst-naar-spraak versie 4 correct ingesteld",
 		"track_recalculated": "Route is herberekend",		
 		
-		"poi_alert_point_X": "Punt %S ligt op %D2 op %N5 uur",
+		"poi_alert_point_X": "Punt %S ligt op %D2 op %N1 uur",
 		"poi_alert_X_points": "%N1 punten in bereik",
 		
 		"heart_rate_value": "hartslag %N1"
