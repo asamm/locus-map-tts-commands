@@ -1,0 +1,184 @@
+{
+	"version": 8,
+	"language": "ko",
+	"actions_A": {
+		"__comment_navigation": "all possible navigation commands",
+		"action_dist": "%D2 앞에서, %A",
+		"arrive_at_dest": "목적지에 도착했습니다",
+		"arrive_at_dest_dist": "%D2 앞에, 목적지 도착 예정입니다",
+		"straight": "직진입니다",
+		"right_bear": "조금 우회전입니다",
+		"right": "우회전입니다",
+		"right_sharp": "급 우회전입니다",
+		"left_bear": "조금 좌회전입니다",
+		"left": "좌회전입니다",
+		"left_sharp": "급 좌회전입니다",
+		"stay_right": "우측 차선 유지합니다",
+		"stay_left": "좌측 차선 유지합니다",
+		"take_exit_right": "우측 출구로 나갑니다",
+		"take_exit_left": "좌측 출구로 나갑니다",
+		"take_ramp_straight": "경사로 직진입니다",
+		"take_ramp_right": "우측 경사로입니다",
+		"take_ramp_left": "좌측 경사로입니다",
+		"merge": "합류합니다",
+		"merge_right": "우측으로 합류합니다",
+		"merge_right_on": "우측의 %S로 합류합니다",
+		"merge_left": "좌측으로 합류합니다",
+		"merge_left_on": "좌측의 %S로 합류합니다",
+		"then": "다음은,",
+		"turn_u-turn": "유턴입니다",
+		"turn_u-turn_dist": "%D2 앞에서 유턴입니다",
+		"recalculating": "경로를 재탐색합니다",
+		"roundabout_dist": "%D2 앞에 로터리입니다",
+		"roundabout_dist_exit": "%D2 앞 로터리에서, %N2 출구입니다",
+		"roundabout_exit": "%N2 번째 출구입니다",
+		"pass_point": "근처에 %S가 있습니다",
+		"pass_point_dist": "%D2 앞에, %S가 있습니다",
+		"navigation_start_car": "자동차 내비게이션을 시작합니다",
+		"navigation_start_bicycle": "자전거 내비게이션을 시작합니다",
+		"navigation_start_foot": "도보 내비게이션을 시작합니다",
+		"navigation_too_far_from_track": "%N1시 방향으로 %D2 앞에, 주행경로가 있습니다",
+		"tts_set": "TTS 기능이 설정되었습니다",
+		"track_recalculated": "트랙이 재계산되었습니다",
+
+		"__comment_poi_alert": "POI Alert parameters",
+		"poi_alert_point_X": "%N1시 방향으로 %D2 앞에 포인트 %S가 있습니다",
+		"poi_alert_X_points": "범위 내에  %N1개의 포인트가 있습니다",
+
+		"__comment_values": "values that are usually used in training manager",
+
+		"value_distance_track": "이동거리 %D1",
+		"value_time_track": "이동시간 %T1",
+		"value_speed_avg_track": "평균속도 %V1",
+		"value_pace_track": "페이스 %P1",
+		"value_cadence_track": "평균케이던스 %N1",
+		"value_elevation_downhill_track": "손실고도  %D1",
+		"value_elevation_uphill_track": "획득고도 %D1",
+		"value_energy_track": "소비열량 %E1",
+
+		"value_distance_interval": "구간거리 %D1",
+		"value_time_interval": "구간시간 %T1",	
+		"value_speed_avg_interval": "구간평균속도 %V1",
+		"value_pace_interval": "구간페이스 %P1",
+		"value_cadence_interval": "구간케이던스 %N1",
+		"value_heart_rate_avg_interval": "구간심박수 %N1 BPM",
+		"value_elevation_downhill_interval": "구간손실고도 %D1",
+		"value_elevation_uphill_interval": "구간획득고도 %D1",
+
+		"value_time_current": "현재시각 %T2",
+		"value_altitude_current": "현재고도 %D1",
+		"value_heart_rate_current": "현재심박수 %N1",
+		"value_device_battery": "배터리잔량, %N1퍼센트",
+
+		"__comment_special": "special unique parameters",
+		"special_comma": ",",
+		"special_period": "."
+	},
+	"distances_D1": {
+		"__comment": "Parameter 'D1' is always used for simple static information like 'Distance is: xxx metres'",
+		"m": [
+			"%N1미터, 1, Inf",
+			"%NDec미터, 0, Inf"
+		],
+		"km": [
+			"%N1킬로미터, 1, Inf",
+			"%NDec킬로미터, 0, Inf"
+		],
+		"yd": [
+			"%N1야드, 1, Inf",
+			"%NDec야드, 0, Inf"
+		],
+		"ft": [
+			"%N1피트, 1, Inf",
+			"%NDec피트, 0, Inf"
+		],
+		"mi": [
+			"%N1마일, 1, Inf",
+			"%NDec마일, 0, Inf"
+		]
+	},
+	"distances_D2": {
+		"__comment": "Parameter 'D2' is optional and may be used in 'Actions' above. It is useful in cases, where D1 and D2 are not equal. Like in 'After xxx metres, turn left'",
+		"parent": "D1"
+	},
+	"energy_E1": {
+		"kj": [
+			"%N1킬로주울, 0, Inf"
+		],
+		"kcal": [
+			"%N1킬로칼로리, 0, Inf"
+		]
+	},
+	"paces_P1": {
+		"__comment": "Parameter 'P1' is always used for simple static information like 'Pace is: xxx min per km'",
+		"minperkm": [
+			"킬로미터당 %T1, 0, Inf"
+		],
+		"minpermile": [
+			"마일당 %T1, 0, Inf"
+		],
+		"minpernmile": [
+			"해리당 %T1, 0, Inf"
+		]
+	},
+	"speeds_V1": {
+		"__comment": "Parameter 'V1' is always used for simple static information like 'Speed is: xxx kph'",
+		"kmh": [
+			"시속 %N1킬로미터, 1, Inf",
+			"시속 %NDec킬로미터, 0, Inf"
+		],
+		"milh": [
+			"시속 %N1마일, 1, Inf",
+			"시속 %NDec마일, 0, Inf"
+		],
+		"nmih": [
+			"시속 %N1해리, 1, Inf",
+			"시속 %NDec해리, 0, Inf"
+		],
+		"knot": [
+			"%N1노트, 1, Inf",
+			"%NDec노트, 0, Inf"
+		]
+	},
+	"times_T1": {
+		"__comment": "Parameter 'T1' is always used for simple static information like 'Time is: xxx sec'",
+		"hours": [
+		    ", 0, Inf",
+            "%N1 시간, 1, Inf"
+		],
+		"minutes": [
+		    ", 0, 0",
+            "%N1 분, 1, Inf"
+		],
+		"seconds": [
+			", 0, 0",
+            "%N1 초, 1, Inf"
+		]
+	},
+	"times_T2": {
+		"__comment": "Parameter 'T2' is optional and may be used in 'Actions' above. It is useful in cases, where T1 and T2 are not equal.",
+		"hours": [
+            "%N1 시, 0, Inf"
+		],
+		"minutes": [
+		    "정각, 0, Inf",
+			"%N1 분, 1, Inf"
+		],
+		"seconds": [
+			"%N1 초, 0, Inf"
+		]
+	},
+	"numbers_N1": {
+	},
+	"numbers_N2": {
+		"1": "첫번째",
+		"2": "두번째",
+		"3": "세번째",
+		"4": "네번째",
+		"5": "다섯번째",
+		"6": "여섯번째",
+		"7": "일곱번째",
+		"8": "여덟번째",
+		"9": "아홉번째"
+	}
+}
