@@ -1,7 +1,8 @@
 {
-	"version": 3,
+	"version": 8,
 	"language": "pl",
 	"actions_A": {
+		"__comment_navigation": "wszystkie możliwe polecenia nawigacyjne",
 		"action_dist": "za %D2 %A",
 		"arrive_at_dest": "dotarłeś do celu",
 		"arrive_at_dest_dist": "za %D2, dotrzesz do celu",
@@ -20,10 +21,10 @@
 		"take_ramp_right": "wjedź wjazdem po prawej",
 		"take_ramp_left": "wjedź wjazdem po lewej",
 		"merge": "połączenie",
-		"merge_right": "połączenie w prawo",
-		"merge_right_on": "połączenie w prawo z drogą %S",
-		"merge_left": "połączenie w lewo",
-		"merge_left_on": "połączenie w lewo z drogą %S",
+		"merge_right": "przejedź na prawy pas",
+		"merge_right_on": "przejedź na prawą drogę %S",
+		"merge_left": "przejedź na lewy pas",
+		"merge_left_on": "przejedź na lewą drogę %S",
 		"then": ", następnie",
 		"turn_u-turn": "zawróć",
 		"turn_u-turn_dist": "za %D2 zawróć",
@@ -31,23 +32,47 @@
 		"roundabout_dist": "za %D2 wjedź na rondo",
 		"roundabout_dist_exit": "za %D2 wjedź na rondo, następnie zjedź %N2 zjazdem",
 		"roundabout_exit": "zjedź %N2 zjazdem",
+		"pass_point": "%S",
+		"pass_point_dist": "%S za %D2",
 		"navigation_start_car": "Trasa przygotowana",
 		"navigation_start_bicycle": "Trasa przygotowana",
 		"navigation_start_foot": "Trasa przygotowana",
 		"navigation_too_far_from_track": "Trasa w odległości %D2 na %N3 godzinie",
 		"tts_set": "System głosowy działa prawidłowo",
 		"track_recalculated": "Trasa została przeliczona",
-		
+
+		"__comment_poi_alert": "Parametry alertów POI",
 		"poi_alert_point_X": "punkt ostrzegawczy %S w odległości %D2 na %N3 godzinie",
-		"poi_alert_X_points": "w pobliżu są punkty ostrzegawcze. %N1",
+		"poi_alert_X_points": "%N1 punkty ostrzegawcze w pobliżu.",
 
-		"heart_rate_value": "%N1 uderzeń na minutę",
+		"__comment_values": "Wartości przeważnie stosowane w asystencie treningów",
+		"value_altitude_current": "wysokość %D1",
+		"value_cadence_interval": "kadencja okrążenia %N1",
+		"value_cadence_track": "kadencja %N1",
+		"value_distance_interval": "długość okrążenia %D1",
+		"value_distance_track": "dystans %D1",
+		"value_device_battery": "%N1 procent baterii",
+		"value_elevation_downhill_interval": "utrata %D1 wysokości na okrążenie",
+		"value_elevation_downhill_track": "utrata %D1 wysokości",
+		"value_elevation_uphill_interval": "przytost %D1 wysokości na okrążenie",
+		"value_elevation_uphill_track": "przyrost %D1 wysokości",
+		"value_energy_track": "energia %E1",
+		"value_heart_rate_current": "%N1 uderzeń serca na minutę",
+		"value_heart_rate_avg_interval": "średnio %N1 uderzeń serca na minutę w czasie okrążenia",
+		"value_pace_interval": "tempo okrążenia %P1",
+		"value_pace_track": "tempo %P1",
+		"value_speed_avg_interval": "średnia prędkość okrążenia %V1",
+		"value_speed_avg_track": "średnia prędkość %V1",
+		"value_time_current": "czas %T1",
+		"value_time_interval": "czas okrążenia %T1",
+		"value_time_track": "czas trasy %T1",
 
+		"__comment_special": "specjalne unikalne parametry",
 		"special_comma": ", ",
 		"special_period": ". "
 	},
 	"distances_D1": {
-	    "__comment": "Parameter 'D1' is always used for simple static information like 'Distance is: xxx metres'",
+		"__comment": "Parametr 'D1' jest zawsze używany do prostych informacji statycznych, takich jak 'Odległość to: xxx metrów'",
 		"m": [
 			"%N1 metr, 1, 1",
 			"%N1 metry, 2, 4",
@@ -61,73 +86,108 @@
 			"%NDec kilometra, 0, Inf"
 		],
 		"yd": [
-			"%N1 yard, 1, 1",
-			"%N1 yards, 2, Inf",
-			"%NDec yards, 0, Inf"
+			"%N1 jard, 1, 1",
+			"%N1 jardy, 2, 4",
+			"%N1 jardów, 5, Inf",
+			"%NDec jarda, 0, Inf"
 		],
 		"ft": [
-			"%N1 foot, 1, 1",
-			"%N1 feet, 2, Inf",
-			"%NDec feet, 0, Inf"
+			"%N1 stopa, 1, 1",
+			"%N1 stopy, 2, 4",
+			"%N1 stóp, 5, Inf",
+			"%NDec stopy, 0, Inf"
 		],
 		"mi": [
-			"%N1 mile, 1, 1",
-			"%N1 miles, 2, Inf",
-			"%NDec miles, 0, Inf"
+			"%N1 mila, 1, 1",
+			"%N1 mile, 2, 4",
+			"%N1 mil, 5, Inf",
+			"%NDec mili, 0, Inf"
 		]
 	},
 	"distances_D2": {
-	    "__comment": "Parameter 'D2' is optional and may be used in 'Actions' above. It is useful in cases, where D1 and D2 are not equal. Like in 'After xxx metres, turn left'",
-	    "parent": "D1"
+		"__comment": "Parametr 'D2' jest opcjonalny i może być użyty w powyższym 'Aktywnościach'. Jest to przydatne w przypadkach, gdy D1 i D2 nie są takie same. Jak np. 'Po xxx metrach skręć w lewo'",
+		"parent": "D1"
+	},
+	"energy_E1": {
+		"kj": [
+			"%N1 kilodżul, 1, 1",
+			"%N1 kilodżule, 2, 4",
+			"%N1 kilodżuli, 5, Inf"
+		],
+		"kcal": [
+			"%N1 kilokalora, 1, 1",
+			"%N1 kilokalorie, 2, 4",
+			"%N1 kilokalorii, 5, Inf"
+		]
+	},
+	"paces_P1": {
+		"__comment": "Parametr 'P1' jest zawsze używany do prostych informacji statycznych, takich jak 'Tempo wynosi: xxx min na km'",
+		"minperkm": [
+			"%T1 na kilometer, 0, 1",
+			"%T1 na kilometery, 2, 4",
+			"%T1 na kilometery, 5, Inf"
+		],
+		"minpermile": [
+			"%T1 na mile, 0, 4",
+			"%T1 na mil, 5, Inf"
+		],
+		"minpernmile": [
+			"%T1 na mile morską, 0, 4",
+			"%T1 na mil morskich, 5, Inf"
+		]
 	},
 	"speeds_V1": {
-	    "__comment": "Parameter 'V1' is always used for simple static information like 'Speed is: xxx metres'",
-        "kmh": [
-            "%N1 kilometr na godzinę, 1, 1",
-            "%N1 kilometry na godzinę, 2, 4",
-            "%N1 kilometrów na godzinę, 5, Inf",
-            "%NDec kilometra na godzinę, 0, Inf"
-        ],
-        "milh": [
-            "%N1 mila na godzinę, 1, 1",
-            "%N1 mile na godzinę, 2, 4",
-            "%N1 mil na godzinę, 5, Inf",
-            "%NDec mili na godzinę, 0, Inf"
-        ],
-        "nmih": [
-            "%N1 mila morska na godzinę, 1, 1",
-            "%N1 mile morskie na godzinę, 2, 4",
-            "%N1 mil morskich na godzinę, 5, Inf",
-            "%NDec mili morskiej na godzinę, 0, Inf"
-        ],
-        "knot": [
-            "%N1 węzeł, 1, 1",
-            "%N1 węzły, 2, 4",
-            "%N1 węzłów, 5, Inf",
-            "%NDec węzła, 0, Inf"
-        ]
+		"__comment": "Parametr 'V1' jest zawsze używany do prostych informacji statycznych, takich jak 'Prędkość wynosi: xxx kilometrów na godzinę'",
+		"kmh": [
+			"%N1 kilometr na godzinę, 1, 1",
+			"%N1 kilometry na godzinę, 2, 4",
+			"%N1 kilometrów na godzinę, 5, Inf",
+			"%NDec kilometra na godzinę, 0, Inf"
+		],
+		"milh": [
+			"%N1 mila na godzinę, 1, 1",
+			"%N1 mile na godzinę, 2, 4",
+			"%N1 mil na godzinę, 5, Inf",
+			"%NDec mili na godzinę, 0, Inf"
+		],
+		"nmih": [
+			"%N1 mila morska na godzinę, 1, 1",
+			"%N1 mile morskie na godzinę, 2, 4",
+			"%N1 mil morskich na godzinę, 5, Inf",
+			"%NDec mili morskiej na godzinę, 0, Inf"
+		],
+		"knot": [
+			"%N1 węzeł, 1, 1",
+			"%N1 węzły, 2, 4",
+			"%N1 węzłów, 5, Inf",
+			"%NDec węzła, 0, Inf"
+		]
 	},
-    "times_T1": {
-        "__comment": "Parameter 'T1' is always used for simple static information like 'Time is: xxx metres'",
-        "hours": [
-            "%N1 godzin, 0, 0",
-            "%N1 godzina, 1, 1",
-            "%N1 godziny, 2, 4",
-            "%N1 godzin, 5, Inf"
-        ],
-        "minutes": [
-            "%N1 minut, 0, 0",
-            "%N1 minuta, 1, 1",
-            "%N1 minuty, 2, 4",
-            "%N1 minut, 5, Inf"
-        ],
-        "seconds": [
-            "%N1 sekund, 0, 0",
-            "%N1 sekunda, 1, 1",
-            "%N1 sekundy, 2, 4",
-            "%N1 sekund, 5, Inf"
-        ]
-    },
+	"times_T1": {
+		"__comment": "Parametr „T1” jest zawsze używany do prostych informacji statycznych, takich jak „Czas wynosi: xxx minut”",
+		"hours": [
+			"%N1 godzin, 0, 0",
+			"%N1 godzina, 1, 1",
+			"%N1 godziny, 2, 4",
+			"%N1 godzin, 5, Inf"
+		],
+		"minutes": [
+			"%N1 minut, 0, 0",
+			"%N1 minuta, 1, 1",
+			"%N1 minuty, 2, 4",
+			"%N1 minut, 5, Inf"
+		],
+		"seconds": [
+			"%N1 sekund, 0, 0",
+			"%N1 sekunda, 1, 1",
+			"%N1 sekundy, 2, 4",
+			"%N1 sekund, 5, Inf"
+		]
+	},
+	"times_T2": {
+		"__comment": "Parametr „T2” jest opcjonalny i może być użyty w powyższym „Działaniach”. Jest to przydatne w przypadkach, gdy T1 i T2 nie są równe.",
+	    "parent": "T1"
+	},
 	"numbers_N1": {
 		"1": "jeden",
 		"2": "dwa",
@@ -192,5 +252,4 @@
 		"11": "jedenastej",
 		"12": "dwunastej"
 	}
-
 }
