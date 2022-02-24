@@ -1,5 +1,5 @@
 {
-	"version": 8,
+	"version": 9,
 	"language": "en",
 	"actions_A": {
 		"__comment_navigation": "all possible navigation commands",
@@ -59,10 +59,12 @@
 		"value_energy_track": "energy %E1",
 		"value_heart_rate_current": "heart rate %N1 BPM",
 		"value_heart_rate_avg_interval": "lap heart rate %N1 BPM",
+		"value_humidity_current": "humidity %V1",
 		"value_pace_interval": "lap pace %P1",
 		"value_pace_track": "pace %P1",
 		"value_speed_avg_interval": "lap average speed %V1",
 		"value_speed_avg_track": "average speed %V1",
+		"value_temperature_current": "temperature %V1",
 		"value_time_current": "current time %T1",
 		"value_time_interval": "lap time %T1",
 		"value_time_track": "time %T1",

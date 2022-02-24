@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [VERSION 9] - 2021-02-24
+### Added
+- "value_temperature_current" value to "actions_A" container, define current temperature
+- "value_humidity_current" value to "actions_A" container, define current humidity
+
 ## [VERSION 8] - 2018-02-13
 ### Added
 - "value_elevation_downhill_interval" value to "actions_A" container, define elevation drop on interval

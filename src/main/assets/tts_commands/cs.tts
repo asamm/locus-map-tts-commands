@@ -1,5 +1,5 @@
 {
-	"version": 8,
+	"version": 9,
 	"language": "cs",
 	"actions_A": {
 		"action_dist": "Za %D2 %A",
@@ -56,10 +56,12 @@
 		"value_energy_track": "energie %E1 ",
 		"value_heart_rate_current": "tep %N1 BPM",
 		"value_heart_rate_avg_interval": "průměrný tep %N1 BPM",
+		"value_humidity_current": "vlhkost %V1",
 		"value_pace_interval": "tempo intervalu %P1",
 		"value_pace_track": "tempo %P1",
 		"value_speed_avg_interval": "průměrná rychlost intervalu %V1",
 		"value_speed_avg_track": "průměrná rychlost %V1",
+		"value_temperature_current": "teplota %V1",
 		"value_time_current": "aktuální čas %T1",
 		"value_time_interval": "čas intervalu %T1",
 		"value_time_track": "čas %T1",
