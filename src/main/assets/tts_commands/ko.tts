@@ -1,5 +1,5 @@
 {
-	"version": 8,
+	"version": 9,
 	"language": "ko",
 	"actions_A": {
 		"__comment_navigation": "all possible navigation commands",
@@ -68,6 +68,8 @@
 		"value_time_current": "현재시각 %T2",
 		"value_altitude_current": "현재고도 %D1",
 		"value_heart_rate_current": "현재심박수 %N1",
+		"value_humidity_current": "현재습도 %S",
+		"value_temperature_current": "현재온도 %S",
 		"value_device_battery": "배터리잔량, %N1퍼센트",
 
 		"__comment_special": "special unique parameters",
