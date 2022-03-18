@@ -1,5 +1,5 @@
 {
-	"version": 8,
+	"version": 9,
 	"language": "ja",
 	"actions_A": {
 		"__comment_navigation": "all possible navigation commands",
@@ -59,10 +59,12 @@
 		"value_energy_track": "消費エネルギー%E1",
 		"value_heart_rate_current": "心拍数%N1",
 		"value_heart_rate_avg_interval": "ラップ心拍数%N1",
+		"value_humidity_current": "湿度 %S",
 		"value_pace_interval": "ラップペース%P1",
 		"value_pace_track": "ペース%P1",
 		"value_speed_avg_interval": "ラップ平均速度%V1",
 		"value_speed_avg_track": "平均速度%V1",
+		"value_temperature_current": "温度 %S",
 		"value_time_current": "時刻%T2",
 		"value_time_interval": "ラップタイム%T1",
 		"value_time_track": "累計タイム%T1",
