@@ -2,6 +2,7 @@
 	"version": 9,
 	"language": "cs",
 	"actions_A": {
+		"__comment_navigation": "all possible navigation commands",
 		"action_dist": "Za %D2 %A",
 		"arrive_at_dest": "Dojeli jste do cíle",
 		"arrive_at_dest_dist": "Za %D2, budete u vašeho cíle",
@@ -40,9 +41,11 @@
 		"tts_set": "Hlasový výstup korektně nastaven",
 		"track_recalculated": "Trať byla přepočtena",
 
+		"__comment_poi_alert": "POI Alert parameters",
 		"poi_alert_point_X": "Bod %S leží %D2 na %N5",
 		"poi_alert_X_points": "%N1 body v dosahu",
 
+		"__comment_values": "values that are usually used in training manager",
 		"value_altitude_current": "altitude %D1",
 		"value_cadence_interval": "kadence intervalu %N1",
 		"value_cadence_track": "kadence %N1",
@@ -66,9 +69,7 @@
 		"value_time_interval": "čas intervalu %T1",
 		"value_time_track": "čas %T1",
 
-		"value_day_time": "%T1",
-		"value_heart_rate": "%N1 BPM",
-
+		"__comment_special": "special unique parameters",
         "special_comma": ", ",
         "special_period": ". "
 	},

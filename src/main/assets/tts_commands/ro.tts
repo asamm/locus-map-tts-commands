@@ -1,0 +1,223 @@
+{
+	"version": 9,
+	"language": "ro",
+	"actions_A": {
+		"__comment_navigation": "all possible navigation commands",
+		"action_dist": "după %D2 %A",
+		"arrive_at_dest": "ai ajuns la destinație",
+		"arrive_at_dest_dist": "după %D2, vei ajunge la destinație",
+		"straight": "continuă înainte",
+		"right_bear": "ține dreapta",
+		"right": "virează la dreapta",
+		"right_sharp": "brusc dreapta",
+		"left_bear": "ține stânga",
+		"left": "virează la stânga",
+		"left_sharp": "brusc stânga",
+		"stay_right": "încadrează-te pe dreapta",
+		"stay_left": "încadrează-te pe stânga",
+		"take_exit_right": "ieși prin dreapta",
+		"take_exit_left": "ieși prin stânga",
+		"take_ramp_straight": "urcă rampa înainte",
+		"take_ramp_right": "urcă rampa la dreapta",
+		"take_ramp_left": "urcă rampa la stânga",
+		"merge": "intră",
+		"merge_right": "intră pe dreapta",
+		"merge_right_on": "intră pe dreapta pe drumul %S",
+		"merge_left": "intră pe stânga",
+		"merge_left_on": "intră pe stânga pe drumul %S",
+		"then": ", apoi",
+		"turn_u-turn": "întoarce",
+		"turn_u-turn_dist": "după %D2 întoarce",
+		"recalculating": "se recalculează",
+		"roundabout_dist": "după %D2, giratoriu",
+		"roundabout_dist_exit": "în giratoriu după %D2, ia %N2 ieșire",
+		"roundabout_exit": "%N2 ieșire",
+		"pass_point": "%S",
+		"pass_point_dist": "%S după %D2",
+		"navigation_start_car": "Să pornim",
+		"navigation_start_bicycle": "Să pedalăm",
+		"navigation_start_foot": "Să mergem",
+		"navigation_too_far_from_track": "Traseul se află %D2 la ora %N1",
+		"tts_set": "Sintetizarea vocală este configurată corect",
+		"track_recalculated": "Traseul a fost recalculat",
+
+		"__comment_poi_alert": "POI Alert parameters",
+		"poi_alert_point_X": "Punctul %S se află %D2 la ora %N1",
+		"poi_alert_X_points": "%N1 puncte în apropiere",
+
+		"__comment_values": "values that are usually used in training manager",
+		"value_altitude_current": "altitudine %D1",
+		"value_cadence_interval": "cadența turei %N1",
+		"value_cadence_track": "cadență %N1",
+		"value_distance_interval": "distanța turei %D1",
+		"value_distance_track": "distanță %D1",
+		"value_device_battery": "baterie %N1 la sută",
+		"value_elevation_downhill_interval": "scădere în altitudine pe tură %D1",
+		"value_elevation_downhill_track": "scădere în altitudine %D1",
+		"value_elevation_uphill_interval": "câștig în altitudine pe tură %D1",
+		"value_elevation_uphill_track": "câștig în altitudine %D1",
+		"value_energy_track": "energie %E1",
+		"value_heart_rate_current": "puls %N1 BPM",
+		"value_heart_rate_avg_interval": "puls pe tură %N1 BPM",
+		"value_humidity_current": "umiditate %S",
+		"value_pace_interval": "ritm pe tură %P1",
+		"value_pace_track": "ritm %P1",
+		"value_speed_avg_interval": "viteză medie pe tură %V1",
+		"value_speed_avg_track": "viteză medie %V1",
+		"value_temperature_current": "temperatură %S",
+		"value_time_current": "timp curent %T1",
+		"value_time_interval": "timp tură %T1",
+		"value_time_track": "timp %T1",
+
+		"__comment_special": "special unique parameters",
+		"special_comma": ", ",
+		"special_period": ". "
+	},
+	"distances_D1": {
+	    "__comment": "Parameter 'D1' is always used for simple static information like 'Distance is: xxx metres'",
+		"m": [
+			"%N1 metru, 1, 1",
+			"%N1 metri, 2, Inf",
+			"%NDec metri, 0, Inf"
+		],
+		"km": [
+			"%N1 kilometru, 1, 1",
+			"%N1 kilometri, 2, Inf",
+			"%NDec kilometri, 0, Inf"
+		],
+		"yd": [
+			"%N1 yard, 1, 1",
+			"%N1 yarzi, 2, Inf",
+			"%NDec yarzi, 0, Inf"
+		],
+		"ft": [
+			"%N1 picior, 1, 1",
+			"%N1 picioare, 2, Inf",
+			"%NDec picioare, 0, Inf"
+		],
+		"mi": [
+			"%N1 milă, 1, 1",
+			"%N1 mile, 2, Inf",
+			"%NDec mile, 0, Inf"
+		]
+	},
+	"distances_D2": {
+	    "__comment": "Parameter 'D2' is optional and may be used in 'Actions' above. It is useful in cases, where D1 and D2 are not equal. Like in 'After xxx metres, turn left'",
+	    "parent": "D1"
+	},
+	"energy_E1": {
+		"kj": [
+			"%N1 kilojuli, 0, Inf"
+		],
+		"kcal": [
+			"%N1 kilocalorii, 0, Inf"
+		]
+	},
+	"paces_P1": {
+		"__comment": "Parameter 'P1' is always used for simple static information like 'Pace is: xxx min per km'",
+		"minperkm": [
+			"%T1 pe kilometru, 0, Inf"
+		],
+		"minpermile": [
+			"%T1 pe milă, 0, Inf"
+		],
+		"minpernmile": [
+			"%T1 pe milă nautică, 0, Inf"
+		]
+	},
+	"speeds_V1": {
+	    "__comment": "Parameter 'V1' is always used for simple static information like 'Speed is: xxx kph'",
+        "kmh": [
+            "%N1 kilometru pe oră, 1, 1",
+            "%N1 kilometri pe oră, 2, Inf",
+            "%NDec kilometri pe oră, 0, Inf"
+        ],
+        "milh": [
+            "%N1 milă pe oră, 1, 1",
+            "%N1 mile pe oră, 2, Inf",
+            "%NDec mile pe oră, 0, Inf"
+        ],
+        "nmih": [
+            "%N1 milă nautică pe oră, 1, 1",
+            "%N1 mile nautice pe oră, 2, Inf",
+            "%NDec mile nautice pe oră, 0, Inf"
+        ],
+        "knot": [
+            "%N1 nod, 1, 1",
+            "%N1 noduri, 2, Inf",
+            "%NDec noduri, 0, Inf"
+        ]
+	},
+    "times_T1": {
+        "__comment": "Parameter 'T1' is always used for simple static information like 'Time is: xxx sec'",
+        "hours": [
+            "%N1 ore, 0, 0",
+            "%N1 oră, 1, 1",
+            "%N1 ore, 2, Inf"
+        ],
+        "minutes": [
+            "%N1 minute, 0, 0",
+            "%N1 minut, 1, 1",
+            "%N1 minute, 2, Inf"
+        ],
+        "seconds": [
+            "%N1 secunde, 0, 0",
+            "%N1 secundă, 1, 1",
+            "%N1 secunde, 2, Inf"
+        ]
+    },
+    "times_T2": {
+	    "__comment": "Parameter 'T2' is optional and may be used in 'Actions' above. It is useful in cases, where T1 and T2 are not equal.",
+	    "parent": "T1"
+	},
+	"numbers_N1": {
+		"1": "unu",
+		"2": "doi",
+		"3": "trei",
+		"4": "patru",
+		"5": "cinci",
+		"6": "șase",
+		"7": "șapte",
+		"8": "opt",
+		"9": "nouă",
+		"10": "zece",
+		"11": "unsprezece",
+		"12": "doisprezece",
+		"13": "treisprezece",
+		"14": "paisprezece",
+		"15": "cinsprezece",
+		"16": "șaisprezece",
+		"17": "șaptesprezece",
+		"18": "optsprezece",
+		"19": "nouăsprezece",
+		"20": "douăzeci",
+		"30": "treizeci",
+		"40": "patruzeci",
+		"50": "cinzeci",
+		"60": "șaizeci",
+		"70": "șaptezeci",
+		"80": "optzeci",
+		"90": "nouăzeci",
+		"100": "o sută",
+		"200": "două sute",
+		"300": "trei sute",
+		"400": "patru sute",
+		"500": "cinci sute",
+		"600": "șase sute",
+		"700": "șapte sute",
+		"800": "opt sute",
+		"900": "nouă sute",
+		"1000": "o mie"
+	},
+	"numbers_N2": {
+		"1": "prima",
+		"2": "a doua",
+		"3": "a treia",
+		"4": "a patra",
+		"5": "a cincea",
+		"6": "a șasea",
+		"7": "a șaptea",
+		"8": "a opta",
+		"9": "a noua"
+	}
+}
