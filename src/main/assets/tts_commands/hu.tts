@@ -1,0 +1,220 @@
+{
+  "version": 9,
+  "language": "hu",
+  "actions_A": {
+    "__comment_navigation": "minden lehetséges navigációs parancs",
+    "action_dist": "%D2 múlva %A",
+    "arrive_at_dest": "megérkeztél",
+    "arrive_at_dest_dist": "%D2 múlva eléred az úticélt",
+    "straight": "menj tovább egyenesen",
+    "right_bear": "tarts jobbra",
+    "right": "fordulj jobbra",
+    "right_sharp": "élesen jobbra",
+    "left_bear": "tarts balra",
+    "left": "fordulj balra",
+    "left_sharp": "élesen balra",
+    "stay_right": "haladj tovább jobbra",
+    "stay_left": "haladj tovább balra",
+    "take_exit_right": "jobbra a kijáraton",
+    "take_exit_left": "balra a kijáraton",
+    "take_ramp_straight": "egyenesen a felhajtón",
+    "take_ramp_right": "jobbra a felhajtón",
+    "take_ramp_left": "balra a felhajtón",
+    "merge": "sorolj be",
+    "merge_right": "sorolj jobbra",
+    "merge_right_on": "sorolj jobbra a következő útra %S",
+    "merge_left": "sorolj balra",
+    "merge_left_on": "sorolja balra a következő útra %S",
+    "then": ", azután",
+    "turn_u-turn": "fordulj vissza",
+    "turn_u-turn_dist": "%D2 múlva fordulj vissza",
+    "recalculating": "várj, újratervezés",
+    "roundabout_dist": "%D2 múlva, körforgalom",
+    "roundabout_dist_exit": "%D2 múlva a körforgalmat hagyd el a %N2 kijáraton",
+    "roundabout_exit": "%N2 kijárat",
+    "pass_point": "%S",
+    "pass_point_dist": "%D2 múlva %S",
+    "navigation_start_car": "induljunk",
+    "navigation_start_bicycle": "tekerjünk",
+    "navigation_start_foot": "túrázzunk",
+    "navigation_too_far_from_track": "Útvonal %D2 távolságra van %N1 órára",
+    "tts_set": "Szövegfelolvasás sikeresen beállítva.",
+    "track_recalculated": "Útvonal újratervezve",
+    "__comment_poi_alert": "POI figyelmeztetések",
+    "poi_alert_point_X": "%S pont %D2 távolságra van %N1 órára",
+    "poi_alert_X_points": "%N1 pont van a tartományon belül",
+    "__comment_values": "edzésnél használt értékek",
+    "value_altitude_current": "magasság %D1",
+    "value_cadence_interval": "kör pedál fordulatszám %N1",
+    "value_cadence_track": "pedál fordulatszám %N1",
+    "value_distance_interval": "kör távolság %D1",
+    "value_distance_track": "távolság %D1",
+    "value_device_battery": "akkuszint %N1 százalék",
+    "value_elevation_downhill_interval": "kör szintcsökkenés %D1",
+    "value_elevation_downhill_track": "szintcsökkenés %D1",
+    "value_elevation_uphill_interval": "kör szintemelkedés %D1",
+    "value_elevation_uphill_track": "szintemelkedés %D1",
+    "value_energy_track": "energia %E1",
+    "value_heart_rate_current": "pulzus %N1 BPM",
+    "value_heart_rate_avg_interval": "kör pulzus %N1 BPM",
+    "value_humidity_current": "páratartalom %S",
+    "value_pace_interval": "kör tempó %P1",
+    "value_pace_track": "tempó %P1",
+    "value_speed_avg_interval": "kör átlagsebesség %V1",
+    "value_speed_avg_track": "átlagsebesség %V1",
+    "value_temperature_current": "hőmérséklet %S",
+    "value_time_current": "pontos idő %T1",
+    "value_time_interval": "köridő %T1",
+    "value_time_track": "eltelt idő %T1",
+    "__comment_special": "speciális karakterek",
+    "special_comma": ", ",
+    "special_period": ". "
+  },
+  "distances_D1": {
+    "__comment": "Parameter \u0027D1\u0027 is always used for simple static information like \u0027Distance is: xxx metres\u0027",
+    "m": [
+      "%N1 méter, 1, 1",
+      "%N1 méter, 2, Inf",
+      "%NDec méter, 0, Inf"
+    ],
+    "km": [
+      "%N1 kilométer, 1, 1",
+      "%N1 kilométer, 2, Inf",
+      "%NDec kilométer, 0, Inf"
+    ],
+    "yd": [
+      "%N1 yard, 1, 1",
+      "%N1 yard, 2, Inf",
+      "%NDec yard, 0, Inf"
+    ],
+    "ft": [
+      "%N1 láb, 1, 1",
+      "%N1 láb, 2, Inf",
+      "%NDec láb, 0, Inf"
+    ],
+    "mi": [
+      "%N1 mérföld, 1, 1",
+      "%N1 mérföld, 2, Inf",
+      "%NDec mérföld, 0, Inf"
+    ]
+  },
+  "distances_D2": {
+    "__comment": "Parameter \u0027D2\u0027 is optional and may be used in \u0027Actions\u0027 above. It is useful in cases, where D1 and D2 are not equal. Like in \u0027After xxx metres, turn left\u0027",
+    "parent": "D1"
+  },
+  "energy_E1": {
+    "kj": [
+      "%N1 kilojoule, 0, Inf"
+    ],
+    "kcal": [
+      "%N1 kilokalória, 0, Inf"
+    ]
+  },
+  "paces_P1": {
+    "__comment": "Parameter \u0027P1\u0027 is always used for simple static information like \u0027Pace is: xxx min per km\u0027",
+    "minperkm": [
+      "%T1 per kilométer, 0, Inf"
+    ],
+    "minpermile": [
+      "%T1 per mérföld, 0, Inf"
+    ],
+    "minpernmile": [
+      "%T1 per tengeri mérföld, 0, Inf"
+    ]
+  },
+  "speeds_V1": {
+    "__comment": "Parameter \u0027V1\u0027 is always used for simple static information like \u0027Speed is: xxx kph\u0027",
+    "kmh": [
+      "%N1 kilométer per óra, 1, 1",
+      "%N1 kilométer per óra, 2, Inf",
+      "%NDec kilométer per óra, 0, Inf"
+    ],
+    "milh": [
+      "%N1 mérföld per óra, 1, 1",
+      "%N1 mérföld per óra, 2, Inf",
+      "%NDec mérföld per óra, 0, Inf"
+    ],
+    "nmih": [
+      "%N1 tengeri mérföld per óra, 1, 1",
+      "%N1 tengeri mérföld per óra, 2, Inf",
+      "%NDec tengeri mérföld per óra, 0, Inf"
+    ],
+    "knot": [
+      "%N1 csomó, 1, 1",
+      "%N1 csomó, 2, Inf",
+      "%NDec csomó, 0, Inf"
+    ]
+  },
+  "times_T1": {
+    "__comment": "Parameter \u0027T1\u0027 is always used for simple static information like \u0027Time is: xxx sec\u0027",
+    "hours": [
+      "%N1 óra, 0, 0",
+      "%N1 óra, 1, 1",
+      "%N1 óra, 2, Inf"
+    ],
+    "minutes": [
+      "%N1 perc, 0, 0",
+      "%N1 perc, 1, 1",
+      "%N1 perc, 2, Inf"
+    ],
+    "seconds": [
+      "%N1 másodperc, 0, 0",
+      "%N1 másodperc, 1, 1",
+      "%N1 másodperc, 2, Inf"
+    ]
+  },
+  "times_T2": {
+    "__comment": "Parameter \u0027T2\u0027 is optional and may be used in \u0027Actions\u0027 above. It is useful in cases, where T1 and T2 are not equal.",
+    "parent": "T1"
+  },
+  "numbers_N1": {
+    "1": "egy",
+    "2": "kettő",
+    "3": "három",
+    "4": "négy",
+    "5": "öt",
+    "6": "hat",
+    "7": "hét",
+    "8": "nyolc",
+    "9": "kilenc",
+    "10": "tíz",
+    "11": "tizenegy",
+    "12": "tizenkettő",
+    "13": "tizenhárom",
+    "14": "tizennégy",
+    "15": "tizenöt",
+    "16": "tizenhat",
+    "17": "tizenhét",
+    "18": "tizennyolc",
+    "19": "tizenkilenc",
+    "20": "húsz",
+    "30": "harminc",
+    "40": "negyven",
+    "50": "ötven",
+    "60": "hatvan",
+    "70": "hetven",
+    "80": "nyolcvan",
+    "90": "kilencven",
+    "100": "száz",
+    "200": "kétszáz",
+    "300": "háromszáz",
+    "400": "négyszáz",
+    "500": "ötszáz",
+    "600": "hatszáz",
+    "700": "hétszáz",
+    "800": "nyolcszáz",
+    "900": "kilencszáz",
+    "1000": "ezer"
+  },
+  "numbers_N2": {
+    "1": "első",
+    "2": "második",
+    "3": "harmadik",
+    "4": "negyedik",
+    "5": "ötödik",
+    "6": "hatodik",
+    "7": "hetedik",
+    "8": "nyolcadik",
+    "9": "kilencedik"
+  }
+}
