@@ -1,0 +1,223 @@
+{
+	"version": 9,
+	"language": "zh",
+	"actions_A": {
+		"__comment_navigation": "all possible navigation commands",
+		"action_dist": "随后 %D2 %A",
+		"arrive_at_dest": "您已到达目的地",
+		"arrive_at_dest_dist": "随后 %D2, 您将到达目的地",
+		"straight": "继续直行",
+		"right_bear": "轻微右转",
+		"right": "右转",
+		"right_sharp": "右急转",
+		"left_bear": "轻微左转",
+		"left": "左转",
+		"left_sharp": "左急转",
+		"stay_right": "保持右侧前行",
+		"stay_left": "保持左侧前行",
+		"take_exit_right": "走右出口",
+		"take_exit_left": "走左出口",
+		"take_ramp_straight": "斜坡直行",
+		"take_ramp_right": "斜坡右转",
+		"take_ramp_left": "斜坡左转",
+		"merge": "并线",
+		"merge_right": "向右并线",
+		"merge_right_on": "在 %S 向右并线",
+		"merge_left": "向左并线",
+		"merge_left_on": "在 %S 向左并线",
+		"then": ", 然后",
+		"turn_u-turn": "掉头",
+		"turn_u-turn_dist": "%D2 后掉头",
+		"recalculating": "稍候,重新计算中",
+		"roundabout_dist": "%D2 后环岛",
+		"roundabout_dist_exit": "%D2 后环岛 %N2 出口",
+		"roundabout_exit": "%N2 出口",
+		"pass_point": "%S",
+		"pass_point_dist": "%D2后 %S",
+		"navigation_start_car": "出发",
+		"navigation_start_bicycle": "出发",
+		"navigation_start_foot": "出发",
+		"navigation_too_far_from_track": "路线位于 %N1 点钟方向 %D2 处",
+		"tts_set": "TTS设置正常",
+		"track_recalculated": "路线已重新计算",
+
+		"__comment_poi_alert": "POI Alert parameters",
+		"poi_alert_point_X": "%S 位于 %N1 点钟方向 %D2 处",
+		"poi_alert_X_points": "抵达 %N1 ",
+
+		"__comment_values": "values that are usually used in training manager",
+		"value_altitude_current": "海拔 %D1",
+		"value_cadence_interval": "单圈踏频 %N1",
+		"value_cadence_track": "踏频 %N1",
+		"value_distance_interval": "单圈距离 %D1",
+		"value_distance_track": "距离 %D1",
+		"value_device_battery": "电量百分之 %N1",
+		"value_elevation_downhill_interval": "单圈海拔下降 %D1",
+		"value_elevation_downhill_track": "海拔下降 %D1",
+		"value_elevation_uphill_interval": "单圈海拔上升 %D1",
+		"value_elevation_uphill_track": "海拔上升 %D1",
+		"value_energy_track": "能量消耗 %E1",
+		"value_heart_rate_current": "心率 %N1 BPM",
+		"value_heart_rate_avg_interval": "单圈心率 %N1 BPM",
+		"value_humidity_current": "湿度 %S",
+		"value_pace_interval": "单圈配速 %P1",
+		"value_pace_track": "配速 %P1",
+		"value_speed_avg_interval": "单圈平常速度 %V1",
+		"value_speed_avg_track": "平均速度 %V1",
+		"value_temperature_current": "温度 %S",
+		"value_time_current": "当前时间 %T1",
+		"value_time_interval": "单圈用时 %T1",
+		"value_time_track": "用时 %T1",
+
+		"__comment_special": "special unique parameters",
+		"special_comma": ", ",
+		"special_period": ". "
+	},
+	"distances_D1": {
+	    "__comment": "Parameter 'D1' is always used for simple static information like 'Distance is: xxx metres'",
+		"m": [
+			"%N1 米, 1, 1",
+			"%N1 米, 2, Inf",
+			"%NDec 米, 0, Inf"
+		],
+		"km": [
+			"%N1 公里, 1, 1",
+			"%N1 公里, 2, Inf",
+			"%NDec 公里, 0, Inf"
+		],
+		"yd": [
+			"%N1 码, 1, 1",
+			"%N1 码, 2, Inf",
+			"%NDec 码, 0, Inf"
+		],
+		"ft": [
+			"%N1 英尺, 1, 1",
+			"%N1 英尺, 2, Inf",
+			"%NDec 英尺, 0, Inf"
+		],
+		"mi": [
+			"%N1 英里, 1, 1",
+			"%N1 英里, 2, Inf",
+			"%NDec 英里, 0, Inf"
+		]
+	},
+	"distances_D2": {
+	    "__comment": "Parameter 'D2' is optional and may be used in 'Actions' above. It is useful in cases, where D1 and D2 are not equal. Like in 'After xxx metres, turn left'",
+	    "parent": "D1"
+	},
+	"energy_E1": {
+		"kj": [
+			"%N1 千焦耳, 0, Inf"
+		],
+		"kcal": [
+			"%N1 千卡, 0, Inf"
+		]
+	},
+	"paces_P1": {
+		"__comment": "Parameter 'P1' is always used for simple static information like 'Pace is: xxx min per km'",
+		"minperkm": [
+			"%T1 每公里, 0, Inf"
+		],
+		"minpermile": [
+			"%T1 每英里, 0, Inf"
+		],
+		"minpernmile": [
+			"%T1 每海里, 0, Inf"
+		]
+	},
+	"speeds_V1": {
+	    "__comment": "Parameter 'V1' is always used for simple static information like 'Speed is: xxx kph'",
+        "kmh": [
+            "%N1 公里每小时, 1, 1",
+            "%N1 公里每小时, 2, Inf",
+            "%NDec 公里每小时, 0, Inf"
+        ],
+        "milh": [
+            "%N1 英里每小时, 1, 1",
+            "%N1 英里每小时, 2, Inf",
+            "%NDec 英里每小时, 0, Inf"
+        ],
+        "nmih": [
+            "%N1 海里每小时, 1, 1",
+            "%N1 海里每小时, 2, Inf",
+            "%NDec 海里每小时, 0, Inf"
+        ],
+        "knot": [
+            "%N1 节, 1, 1",
+            "%N1 节, 2, Inf",
+            "%NDec 节, 0, Inf"
+        ]
+	},
+    "times_T1": {
+        "__comment": "Parameter 'T1' is always used for simple static information like 'Time is: xxx sec'",
+        "hours": [
+            "%N1 时, 0, 0",
+            "%N1 时, 1, 1",
+            "%N1 时, 2, Inf"
+        ],
+        "minutes": [
+            "%N1 分, 0, 0",
+            "%N1 分, 1, 1",
+            "%N1 分, 2, Inf"
+        ],
+        "seconds": [
+            "%N1 秒, 0, 0",
+            "%N1 秒, 1, 1",
+            "%N1 秒, 2, Inf"
+        ]
+    },
+    "times_T2": {
+	    "__comment": "Parameter 'T2' is optional and may be used in 'Actions' above. It is useful in cases, where T1 and T2 are not equal.",
+	    "parent": "T1"
+	},
+	"numbers_N1": {
+		"1": "一",
+		"2": "二",
+		"3": "三",
+		"4": "四",
+		"5": "五",
+		"6": "六",
+		"7": "七",
+		"8": "八",
+		"9": "九",
+		"10": "十",
+		"11": "十一",
+		"12": "十二",
+		"13": "十三",
+		"14": "十四",
+		"15": "十五",
+		"16": "十六",
+		"17": "十七",
+		"18": "十八",
+		"19": "十九",
+		"20": "二十",
+		"30": "三十",
+		"40": "四十",
+		"50": "五十",
+		"60": "六十",
+		"70": "七十",
+		"80": "八十",
+		"90": "九十",
+		"100": "一百",
+		"200": "二百",
+		"300": "三百",
+		"400": "四百",
+		"500": "五百",
+		"600": "六百",
+		"700": "七百",
+		"800": "八百",
+		"900": "九百",
+		"1000": "一千"
+	},
+	"numbers_N2": {
+		"1": "第一",
+		"2": "第二",
+		"3": "第三",
+		"4": "第四",
+		"5": "第五",
+		"6": "第六",
+		"7": "第七",
+		"8": "第八",
+		"9": "第九"
+	}
+}
