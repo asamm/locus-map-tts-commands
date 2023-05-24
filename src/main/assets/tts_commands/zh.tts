@@ -43,7 +43,7 @@
 
 		"__comment_poi_alert": "POI Alert parameters",
 		"poi_alert_point_X": "%S 位于 %N1 点钟方向 %D2 处",
-		"poi_alert_X_points": "抵达 %N1 ",
+		"poi_alert_X_points": "近处共 %N1 个航点",
 
 		"__comment_values": "values that are usually used in training manager",
 		"value_altitude_current": "海拔 %D1",
