@@ -3,9 +3,9 @@
 	"language": "sp",
 	"actions_A": {
 		"__comment_navigation": "todos los comandos de navegación posibles",
-		"action_dist": "después de %D %A",
+		"action_dist": "después de %D1 %A",
 		"arrive_at_dest": "has llegado a destino",
-		"arrive_at_dest_dist": "después de %D, llegarás a tu destino",
+		"arrive_at_dest_dist": "después de %D1, llegarás a tu destino",
 		"straight": "sigue derecho",
 		"right_bear": "gira a la derecha",
 		"right": "ve a la derecha",
@@ -27,24 +27,22 @@
 		"merge_left_on": "únete a la izquierda en la calle %S",
 		"then": ", entonces",
 		"turn_u-turn": "gira en U",
-		"turn_u-turn_dist": "después de %D gira en U",
+		"turn_u-turn_dist": "después de %D1 gira en U",
 		"recalculating": "espera, recalculando",
-		"roundabout_dist": "después de %D, rotonda",
-		"roundabout_dist_exit": "en la rotonda después de %D, toma la %N2 salida",
+		"roundabout_dist": "después de %D1, rotonda",
+		"roundabout_dist_exit": "en la rotonda después de %D1, toma la %N2 salida",
 		"roundabout_exit": "%N2 salida",
 		"pass_point": "%S",
 		"pass_point_dist": "%S después %D2",
 		"navigation_start_car": "Arrancamos",
 		"navigation_start_bicycle": "A rodar",
 		"navigation_start_foot": "A caminar",
-		"navigation_too_far_from_track": "La ruta se encuentra a %D a las %N1 en punto",
+		"navigation_too_far_from_track": "La ruta se encuentra a %D1 a las %N1 en punto",
 		"tts_set": "Text-to-speech seteado correctamente",
 		"track_recalculated": "La ruta fue recalculada",
-
 		"__comment_poi_alert": "parámetros de alerta de POI",
-		"poi_alert_point_X": "El punto %S se encuentra a %D a las %N1 en punto",
-		"poi_alert_X_points": "%N1 puntos en vista"
-
+		"poi_alert_point_X": "El punto %S se encuentra a %D1 a las %N1 en punto",
+		"poi_alert_X_points": "%N1 puntos en vista",
 		"__comment_values": "valores que son usados en el administrador de entrenamiento",
 		"value_day_time": "%T1",
 		"value_heart_rate": "%N1 BPM",
@@ -59,7 +57,6 @@
 		"value_time_current": "tiempo actual %T1",
 		"value_time_interval": "tiempo intervalo %T1",
 		"value_time_track": "tiempo %T1",
-
 		"__comment_special": "parámetros especiales únicos",
 		"special_comma": ", ",
 		"special_period": ". "
@@ -68,27 +65,27 @@
 		"__comment": "EL parámetro 'D1' es usado para información estática simple como 'La distancia es: xxx metros'",
 		"m": [
 			"%N1 metro, 1, 1",
-			"%N1 metros, 2, Inf"
+			"%N1 metros, 2, Inf",
 			"%NDec meteros, 0, Inf"
 		],
 		"km": [
 			"%N1 kilómetro, 1, 1",
-			"%N1 kilómetros, 2, Inf"
+			"%N1 kilómetros, 2, Inf",
 			"%NDec kilómetros, 0, Inf"
 		],
 		"yd": [
 			"%N1 yarda, 1, 1",
-			"%N1 yardas, 2, Inf"
+			"%N1 yardas, 2, Inf",
 			"%NDec yardas, 0, Inf"
 		],
 		"ft": [
 			"%N1 pie, 1, 1",
-			"%N1 pies, 2, Inf"
+			"%N1 pies, 2, Inf",
 			"%NDec pies, 0, Inf"
 		],
 		"mi": [
 			"%N1 milla, 1, 1",
-			"%N1 millas, 2, Inf"
+			"%N1 millas, 2, Inf",
 			"%NDec millas, 0, Inf"
 		]
 	},
