@@ -37,9 +37,9 @@
 		"navigation_start_car": "Let's go",
 		"navigation_start_bicycle": "Let's go",
 		"navigation_start_foot": "Let's go",
-		"navigation_too_far_from_track": "Track lies %D2 on %N1 o'clock",
+		"navigation_too_far_from_track": "Route lies %D2 on %N1 o'clock",
 		"tts_set": "Text-to-speech correctly set",
-		"track_recalculated": "Track was recalculated",
+		"track_recalculated": "Route has been recalculated",
 
 		"__comment_poi_alert": "POI Alert parameters",
 		"poi_alert_point_X": "Point %S lies %D2 on %N1 o'clock",
