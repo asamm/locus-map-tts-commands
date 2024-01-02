@@ -1,0 +1,223 @@
+{
+	"version": 9,
+	"language": "fr",
+	"actions_A": {
+		"__comment_navigation": "toutes les commandes de navigation possibles",
+		"action_dist": "après %D2 %A",
+		"arrive_at_dest": "vous êtes arrivé à votre destination",
+		"arrive_at_dest_dist": "après %D2, vous serez à votre destination",
+		"straight": "suivez le cours de la route",
+		"right_bear": "vers la droite",
+		"right": "tournez à droite",
+		"right_sharp": "tournez fortement à droite",
+		"left_bear": "vers la gauche",
+		"left": "tournez à gauche",
+		"left_sharp": "tournez fortement à gauche",
+		"stay_right": "restez à droite",
+		"stay_left": "restez à gauche",
+		"take_exit_right": "prenez la sortie à droite",
+		"take_exit_left": "prenez la sortie à gauche",
+		"take_ramp_straight": "prenez la rampe devant vous",
+		"take_ramp_right": "prenez la rampe à droite",
+		"take_ramp_left": "prenez la rampe à gauche",
+		"merge": "fusionner",
+		"merge_right": "conduisez à droite",
+		"merge_right_on": "conduisez à droite sur %S",
+		"merge_left": "conduisez à gauche",
+		"merge_left_on": "conduisez à gauche sur %S",
+		"then": ", puis",
+		"turn_u-turn": "faites demi-tour si possible",
+		"turn_u-turn_dist": "faites demi-tour après %D2",
+		"recalculating": "recalcul en cours",
+		"roundabout_dist": "après %D2, rond-point",
+		"roundabout_dist_exit": "rond-point après %D2, prenez la %N2 sortie",
+		"roundabout_exit": "sortie %N2",
+		"pass_point": "%S",
+		"pass_point_dist": "%S après %D2",
+		"navigation_start_car": "Allons-y",
+		"navigation_start_bicycle": "Allons-y",
+		"navigation_start_foot": "Allons-y",
+		"navigation_too_far_from_track": "La route se trouve à %D2 à %N1 heures",
+		"tts_set": "Synthèse vocale correctement configurée",
+		"track_recalculated": "L'itinéraire a été recalculé",
+
+		"__comment_poi_alert": "Paramètres d'alerte POI",
+		"poi_alert_point_X": "Le point %S se trouve à %D2 à %N1 heures",
+		"poi_alert_X_points": "%N1 points à portée",
+
+		"__comment_values": "valeurs généralement utilisées dans le gestionnaire d'entraînement",
+		"value_altitude_current": "altitude %D1",
+		"value_cadence_interval": "cadence de tour %N1",
+		"value_cadence_track": "cadence %N1",
+		"value_distance_interval": "distance de tour %D1",
+		"value_distance_track": "distance %D1",
+		"value_device_battery": "batterie %N1 pour cent",
+		"value_elevation_downhill_interval": "perte d'altitude de tour %D1",
+		"value_elevation_downhill_track": "perte d'altitude %D1",
+		"value_elevation_uphill_interval": "gain d'altitude de tour %D1",
+		"value_elevation_uphill_track": "gain d'altitude %D1",
+		"value_energy_track": "énergie %E1",
+		"value_heart_rate_current": "fréquence cardiaque %N1 BPM",
+		"value_heart_rate_avg_interval": "fréquence cardiaque de tour %N1 BPM",
+		"value_humidity_current": "humidité %S",
+		"value_pace_interval": "rythme de tour %P1",
+		"value_pace_track": "rythme %P1",
+		"value_speed_avg_interval": "vitesse moyenne de tour %V1",
+		"value_speed_avg_track": "vitesse moyenne %V1",
+		"value_temperature_current": "température %S",
+		"value_time_current": "heure actuelle %T1",
+		"value_time_interval": "temps de tour %T1",
+		"value_time_track": "temps %T1",
+
+		"__comment_special": "paramètres uniques spéciaux",
+		"special_comma": ", ",
+		"special_period": ". "
+	},
+	"distances_D1": {
+	    "__comment": "Le paramètre 'D1' est toujours utilisé pour des informations simples et statiques comme 'La distance est de : xxx mètres'",
+		"m": [
+			"%N1 mètre, 1, 1",
+			"%N1 mètres, 2, Inf",
+			"%NDec mètres, 0, Inf"
+		],
+		"km": [
+			"%N1 kilomètre, 1, 1",
+			"%N1 kilomètres, 2, Inf",
+			"%NDec kilomètres, 0, Inf"
+		],
+		"yd": [
+			"%N1 yard, 1, 1",
+			"%N1 yards, 2, Inf",
+			"%NDec yards, 0, Inf"
+		],
+		"ft": [
+			"%N1 pied, 1, 1",
+			"%N1 pieds, 2, Inf",
+			"%NDec pieds, 0, Inf"
+		],
+		"mi": [
+			"%N1 mille, 1, 1",
+			"%N1 milles, 2, Inf",
+			"%NDec milles, 0, Inf"
+		]
+	},
+	"distances_D2": {
+	    "__comment": "Le paramètre 'D2' est optionnel et peut être utilisé dans les 'Actions' ci-dessus. Il est utile dans les cas où D1 et D2 ne sont pas égaux. Comme dans 'Après xxx mètres, tournez à gauche'",
+	    "parent": "D1"
+	},
+	"energy_E1": {
+		"kj": [
+			"%N1 kilojoules, 0, Inf"
+		],
+		"kcal": [
+			"%N1 kilocalories, 0, Inf"
+		]
+	},
+	"paces_P1": {
+		"__comment": "Le paramètre 'P1' est toujours utilisé pour des informations statiques simples telles que 'L'allure est de : xxx min par km'",
+		"minperkm": [
+			"%T1  par kilomètre, 0, Inf"
+		],
+		"minpermile": [
+			"%T1 par mille, 0, Inf"
+		],
+		"minpernmile": [
+			"%T1 par mille nautique, 0, Inf"
+		]
+	},
+	"speeds_V1": {
+	    "__comment": "Le paramètre 'V1' est toujours utilisé pour des informations statiques simples telles que 'La vitesse est de : xxx km/h'",
+        "kmh": [
+            "%N1 kilomètre par heure, 1, 1",
+            "%N1 kilomètres par heure, 2, Inf",
+            "%NDec kilomètres par heure, 0, Inf"
+        ],
+        "milh": [
+            "%N1 mille par heure, 1, 1",
+            "%N1 milles par heure, 2, Inf",
+            "%NDec milles par heure, 0, Inf"
+        ],
+        "nmih": [
+            "%N1 mille nautique par heure, 1, 1",
+            "%N1 milles nautiques par heure, 2, Inf",
+            "%NDec milles nautiques par heure, 0, Inf"
+        ],
+        "knot": [
+            "%N1 nœud, 1, 1",
+            "%N1 nœuds, 2, Inf",
+            "%NDec nœuds, 0, Inf"
+        ]
+	},
+    "times_T1": {
+        "__comment": "Le paramètre 'T1' est toujours utilisé pour des informations statiques simples telles que 'L'heure est : xxx sec'",
+        "hours": [
+            "%N1 heures, 0, 0",
+            "%N1 heure, 1, 1",
+            "%N1 heures, 2, Inf"
+        ],
+        "minutes": [
+            "%N1 minutes, 0, 0",
+            "%N1 minute, 1, 1",
+            "%N1 minutes, 2, Inf"
+        ],
+        "seconds": [
+            "%N1 secondes, 0, 0",
+            "%N1 seconde, 1, 1",
+            "%N1 secondes, 2, Inf"
+        ]
+    },
+    "times_T2": {
+	    "__comment": "Le paramètre 'T2' est facultatif et peut être utilisé dans les 'Actions' ci-dessus. Il est utile dans les cas où T1 et T2 ne sont pas égaux.",
+	    "parent": "T1"
+	},
+	"numbers_N1": {
+		"1": "un",
+		"2": "deux",
+		"3": "trois",
+		"4": "quatre",
+		"5": "cinq",
+		"6": "six",
+		"7": "sept",
+		"8": "huit",
+		"9": "neuf",
+		"10": "dix",
+		"11": "onze",
+		"12": "douze",
+		"13": "treize",
+		"14": "quatorze",
+		"15": "quinze",
+		"16": "seize",
+		"17": "dix-sept",
+		"18": "dix-huit",
+		"19": "dix-neuf",
+		"20": "vingt",
+		"30": "trente",
+		"40": "quarante",
+		"50": "cinquante",
+		"60": "soixante",
+		"70": "soixante-dix",
+		"80": "quatre-vingts",
+		"90": "quatre-vingt-dix",
+		"100": "cent",
+		"200": "deux cents",
+		"300": "trois cents",
+		"400": "quatre cents",
+		"500": "cinq cents",
+		"600": "six cents",
+		"700": "sept cents",
+		"800": "huit cents",
+		"900": "neuf cents",
+		"1000": "mille"
+	},
+	"numbers_N2": {
+		"1": "premier",
+		"2": "deuxième",
+		"3": "troisième",
+		"4": "quatrième",
+		"5": "cinquième",
+		"6": "sixième",
+		"7": "septième",
+		"8": "huitième",
+		"9": "neuvième"
+	}
+}

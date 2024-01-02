@@ -25,7 +25,7 @@ buildSrc/gradle.properties
 captures/
 
 # IDEA stuff
-
+**/.idea/appInsightsSettings.xml
 **/.idea/assetWizardSettings.xml
 **/.idea/codeStyles/
 **/.idea/copyright/
