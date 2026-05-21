@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+The `VERSION N` headings below track the TTS **file-format revision** consumed by Locus Map. The `[0.x.y]` headings (added since the library is published to Maven) track the **Maven artifact version** — these two numbers are intentionally independent.
+
+## [0.1.0] - unreleased
+### Changed
+- Library is now distributed via JitPack as `com.github.asamm:locus-map-tts-commands:<tag>`. Locus Map consumes it as a Maven dependency; the previous git-submodule integration was retired.
+- Project is standalone: own `settings.gradle.kts`, `gradle.properties`, and `jitpack.yml` (pins JDK 17 for AGP 9.x).
+
 ## [VERSION 9] - 2021-02-24
 ### Added
 - "value_temperature_current" value to "actions_A" container, define current temperature

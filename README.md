@@ -4,28 +4,40 @@ Repository for TTS voice commands for Locus Map application.
 
 Voices are used for *Navigation* and *Audio coach* systems.
 
+## Distribution
+
+The library is served as an Android AAR via [JitPack](https://jitpack.io):
+
+```
+com.github.asamm:locus-map-tts-commands:<git-tag>
+```
+
+JitPack builds on demand the first time a given tag is requested — no publishing workflow lives in this repo. To cut a new release, push a git tag (e.g. `0.1.0`); the next consumer build will trigger JitPack to assemble the AAR.
+
+The TTS file-format revision is tracked in [`CHANGELOG.md`](CHANGELOG.md) under `VERSION N` headings, independently of the released tag.
+
 ## Contribution
 
-We always update en.tts file, so use it also as a sample file, what is already possible. cs.tts is also updated by us and it is nice example how to deal with more complex languages than just en.tts. 
+We always update `en.tts` first, so use it as the canonical sample of what is currently supported. `cs.tts` is also maintained by us and is a good example of how to handle languages more complex than English.
 
-There are two methods of how to contribute to modifications or even a new TTS voice. Before we accept any changes, please use below *Custom voice* method and test your modifications.
+There are two ways to contribute changes or a new TTS voice. Before we accept anything, please use the *Custom voice* method below to test your modifications on a real device.
 
-Format used for values is called JSON. This format is very sensitive on incorrect syntax, so suggest double-check before publishing.
+The format used in `.tts` files is JSON; it is very sensitive to syntax errors, so please double-check before publishing.
 
 ### Pull request
 
-Recommended method. Useful if you plan to contribute more often and are at least a little familiar with Git workflow.
+Recommended. Useful if you plan to contribute more often and are comfortable with the Git workflow. Once a PR is merged, the change reaches Locus Map users only after a new tag is pushed.
 
-### Create a new issue
+### Open an issue
 
-Open [new issue](https://github.com/asamm/locus-map-tts-commands/issues) in this repository with proposed changes. We will confirm and merge them as soon as possible.
+Open a [new issue](https://github.com/asamm/locus-map-tts-commands/issues) in this repository with the proposed changes. We will confirm and merge them as soon as possible.
 
 ## Custom voices
 
-For testing purpose (modifications) or for creating own funny voice, a simple method is supported:
+For testing (or to create your own funny voice), a simple method is supported:
 
-Any *\*.tts* file copy into */Locus/data/tts/* directory. When creating TTS engine in the app, Locus firstly check if correct file is available in this directory and use it.
- 
+Copy any `*.tts` file into the `/Locus/data/tts/` directory. When creating a TTS engine inside the app, Locus first checks whether a matching file exists there and uses it if so.
+
 ## TTS file format
 
 TODO

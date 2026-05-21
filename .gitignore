@@ -25,6 +25,7 @@ buildSrc/gradle.properties
 captures/
 
 # IDEA stuff
+**/.idea/AndroidProjectSystem.xml
 **/.idea/appInsightsSettings.xml
 **/.idea/assetWizardSettings.xml
 **/.idea/codeStyles/
@@ -34,7 +35,10 @@ captures/
 **/.idea/encodings.xml
 **/.idea/gradle.xml
 **/.idea/libraries
+**/.idea/markdown.xml
+**/.idea/migrations.xml
 **/.idea/misc.xml
 **/.idea/modules.xml
+**/.idea/runConfigurations.xml
 **/.idea/workspace.xml
 **/.idea/vcs.xml
