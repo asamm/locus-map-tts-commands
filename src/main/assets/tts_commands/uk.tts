@@ -1,6 +1,6 @@
 {
 	"version": 5,
-	"language": "ua",
+	"language": "uk",
 	"actions_A": {
 		"action_dist": "через %D2 %A",
 		"arrive_at_dest": "ви прибули в місце призначення",

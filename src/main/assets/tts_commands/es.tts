@@ -1,6 +1,6 @@
 {
 	"version": 5,
-	"language": "sp",
+	"language": "es",
 	"actions_A": {
 		"__comment_navigation": "todos los comandos de navegación posibles",
 		"action_dist": "después de %D1 %A",

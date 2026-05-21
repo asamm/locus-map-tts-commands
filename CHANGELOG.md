@@ -6,7 +6,14 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 The `VERSION N` headings below track the TTS **file-format revision** consumed by Locus Map. The `[0.x.y]` headings (added since the library is published to Maven) track the **Maven artifact version** — these two numbers are intentionally independent.
 
-## [0.1.0] - unreleased
+## [0.1.1] - unreleased
+### Fixed
+- `es.tts`: corrected `"language"` field from non-standard `"sp"` to ISO 639-1 `"es"`.
+- `uk.tts`: corrected `"language"` field from country-code `"ua"` to ISO 639-1 `"uk"`.
+
+These were metadata-only; Locus Map looks up `.tts` files by filename, so the runtime behaviour is unchanged.
+
+## [0.1.0] - 2026-05-21
 ### Changed
 - Library is now distributed via JitPack as `com.github.asamm:locus-map-tts-commands:<tag>`. Locus Map consumes it as a Maven dependency; the previous git-submodule integration was retired.
 - Project is standalone: own `settings.gradle.kts`, `gradle.properties`, and `jitpack.yml` (pins JDK 17 for AGP 9.x).

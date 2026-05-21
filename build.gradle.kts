@@ -28,7 +28,7 @@ android {
 // and overrides version from the tag at build time. The defaults below exist so
 // `./gradlew publishToMavenLocal` works locally without any -P flags.
 group = "com.github.asamm"
-version = "0.1.0"
+version = "0.1.1"
 
 afterEvaluate {
     publishing {
